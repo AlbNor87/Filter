@@ -1,0 +1,36 @@
+.navbar {
+    height: 48px;
+    background-color: $FilterBlack;
+    border-bottom: 2px solid $FilterPink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    fill: white;
+    width: 80px;
+    height: 28px;
+    margin-left: 13px;
+
+}
+
+.log-in {
+    color: $FilterPink;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    p {
+        text-transform: uppercase;
+        font-family: 'PF Din';
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: -3px;
+    }
+    img {
+        width: 14.75px;
+        height: 11.16px;
+        margin-left: 4px;
+    }
+}

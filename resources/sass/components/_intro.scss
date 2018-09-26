@@ -1,0 +1,89 @@
+.intro-container {
+    width: 100%;
+    height: 600px;
+    background-color: $FilterBlack;
+    display: flex;
+    flex-direction: column;
+    padding-right: 17px;
+    padding-left: 17px;
+    color: $FilterWhite;
+}
+
+.title {
+    width: 326px;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 32px;
+    margin-top: 46px;
+    margin-bottom: 12px;
+}
+
+.intro {
+    font-family: 'HarrietText';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    color: $FilterGreyLight;
+    text-shadow: 2px 4px 6px hsla(0, 0, 0, 0.16);
+}
+
+.magazine-container {
+    position: relative;
+    height: 254px;
+    width: 340px;
+    margin-top: 42px;
+}
+
+.magazine-1, .magazine-3 {
+    position: absolute;
+    bottom: 0;
+    height: 228px;
+    width: 160px;
+    background-size: cover;
+}
+
+.magazine-1 {
+    left: 0;
+    background-image: url('/images/magazine1.png');
+}
+.magazine-3 {
+    right: 0;
+    background-image: url('/images/magazine3.png');
+}
+
+.magazine-2 {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 254px;
+    width: 180px;
+    background-image: url('/images/magazine2.png');
+    background-size: cover;
+}
+
+.testa {
+    position: fixed;
+    top: 599px; 
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 339px;
+    height: 48px;
+    background-color: $FilterGold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        font-family: 'PF Din';
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 20;
+        font-size: 24px;
+        font-weight: 500;
+        color: $FilterBlack;
+    }
+}
+

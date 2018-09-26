@@ -1,20 +1,52 @@
-
-// Body
-$body-bg: #f8fafc;
+// Colors
+$FilterWhite: #FAFAFA;
+$FilterGreyLight: #CECECE;
+$FilterGreyDark: #292929;
+$FilterBlack: #1A1A1A;
+$FilterGold: #DEC05F;
+$FilterRed: #D1201E;
+$FilterPink: #E1AB99;
 
 // Typography
-$font-family-sans-serif: "Nunito", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+@font-face {
+    font-family: 'Harriet';
+    font-weight: 300;
+    src: url('/fonts/HarrietDisplayLight.otf') format('opentype');
+}
 
-// Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66D9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+@font-face {
+    font-family: 'Harriet';
+    font-weight: 500;
+    src: url('/fonts/HarrietDisplayRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Harriet';
+    font-weight: 700;
+    src: url('/fonts/HarrietDisplayBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'HarrietText';
+    font-weight: 500;
+    src: url('/fonts/HarrietTextRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'PF Din';
+    font-weight: 500;
+    src: url('/fonts/PfDinMedium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'PF Din';
+    font-weight: 400;
+    src: url('/fonts/PfDinRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'PF Din';
+    font-weight: 300;
+    src: url('/fonts/PfDinLight.otf') format('opentype');
+}
+

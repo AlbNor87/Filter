@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .logo {
@@ -22,6 +21,7 @@
     display: flex;
     align-items: center;
     p {
+        color: $FilterPink;
         text-transform: uppercase;
         font-family: 'PF Din';
         font-size: 16px;

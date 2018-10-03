@@ -1,6 +1,10 @@
 * {
     -webkit-font-smoothing: antialiased;
     font-family: 'Harriet';
-    // color: white;
+    color: $FilterWhite;
+}
+
+body {
+    background-color: $FilterBlack;
 }
 

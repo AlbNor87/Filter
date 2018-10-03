@@ -1,4 +1,86 @@
 .footer {
+    width: 100%;
     color: $FilterWhite;
-    background-color: black;
+    background-color: $FilterBlack;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 48px;
+    
+    h1 {
+        font-size: 29.25px;
+        font-weight: 300;
+        line-height: 41px;
+    }
+
+    h3 {
+        font-family: 'Harriet Text';
+        color: $FilterGreyLight;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+}
+
+.sign-up-container {
+    padding: 40px;
+    background-color: $FilterGreyDark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign-up {
+    margin-top: 16px;
+    width: 338px;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding-top: 4px;
+    width: 120px;
+    height: 40px;
+    background-color: $FilterRed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'PF Din';
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input[type=text] {
+    flex: 1;
+    height: 40px;
+    padding: 4px 15px;
+    box-sizing: border-box;
+    border: none;
+    color: $FilterGreyDark;
+    font-family: 'PF Din';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.logo-container {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 160px;
+    }
+    p {
+        margin-top: 8px;
+        font-family: 'Harriet Text';
+        color: $FilterGreyLight;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+    }
 }

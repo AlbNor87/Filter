@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: 'HarrietText';
+  font-family: 'Harriet Text';
   font-weight: 500;
   src: url("/fonts/HarrietTextRegular.otf") format("opentype");
 }
@@ -43,6 +43,11 @@
 * {
   -webkit-font-smoothing: antialiased;
   font-family: 'Harriet';
+  color: #FAFAFA;
+}
+
+body {
+  background-color: #1A1A1A;
 }
 
 h1,
@@ -53,6 +58,78 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+.gradient-left {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(#363636));
+  background-image: linear-gradient(#1A1A1A, #363636);
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.gradient-right {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#363636), to(#1A1A1A));
+  background-image: linear-gradient(#363636, #1A1A1A);
+  -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+
+.navbar {
+  height: 48px;
+  background-color: #1A1A1A;
+  border-bottom: 2px solid #E1AB99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  fill: white;
+  width: 80px;
+  height: 28px;
+  margin-left: 13px;
+}
+
+.log-in {
+  color: #E1AB99;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.log-in p {
+  color: #E1AB99;
+  text-transform: uppercase;
+  font-family: 'PF Din';
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: -3px;
+}
+
+.log-in img {
+  width: 14.75px;
+  height: 11.16px;
+  margin-left: 4px;
 }
 
 .intro-container {
@@ -66,8 +143,8 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding-right: 18px;
+  padding-left: 18px;
   color: #FAFAFA;
 }
 
@@ -80,13 +157,14 @@ p {
   font-size: 32px;
   margin-top: 46px;
   margin-bottom: 12px;
+  line-height: 35px;
 }
 
 .intro {
-  font-family: 'HarrietText';
+  font-family: 'Harriet Text';
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 22px;
   color: #CECECE;
   text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -132,6 +210,7 @@ p {
 
 .testa {
   position: fixed;
+  z-index: 2;
   top: 599px;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -154,16 +233,215 @@ p {
   font-family: 'PF Din';
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 20;
   font-size: 24px;
   font-weight: 500;
   color: #1A1A1A;
 }
 
-.navbar {
-  height: 48px;
+.library-container {
+  margin-top: 28px;
+  width: 100%;
   background-color: #1A1A1A;
-  border-bottom: 2px solid #E1AB99;
+}
+
+.library {
+  position: relative;
+  width: 100%;
+  height: 371px;
+  background-image: url("/images/library.png");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.library h2 {
+  margin-top: 20px;
+  z-index: 1;
+  font-family: 'Harriet';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #CECECE;
+  text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.library-gradient {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1A1A1A), to(rgba(26, 26, 26, 0.8)));
+  background-image: linear-gradient(#1A1A1A, rgba(26, 26, 26, 0.8));
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.pitch-container {
+  position: relative;
+  margin-top: 16px;
+  width: 100%;
+  height: 400px;
+  background-color: #1A1A1A;
+}
+
+.pitch-article-container {
+  position: absolute;
+  z-index: 1;
+  padding: 18px;
+}
+
+.pitch-article {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.pitch-title {
+  color: #FAFAFA;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.pitch-content {
+  font-family: 'Harriet Text';
+  color: #CECECE;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.saidAboutFilter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 350px;
+}
+
+.saidAboutFilter-title {
+  margin-top: 40px;
+  padding-left: 18px;
+  text-transform: uppercase;
+  font-family: 'PF Din';
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 27px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.swiper {
+  background-color: #E1AB99;
+  width: 338px;
+  height: 193px;
+}
+
+.subscription-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 18px;
+}
+
+.subscription-title {
+  position: absolute;
+  margin-top: 18px;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  font-family: 'PF Din';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  letter-spacing: 1px;
+}
+
+.subtype-container {
+  margin-top: 18px;
+  width: 100%;
+  background-color: #363636;
+  padding: 16px 16px 10px 16px;
+}
+
+.extra-top-margin {
+  margin-top: 58px;
+}
+
+.subtype-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subtype-title {
+  color: #FAFAFA;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+.subtype-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 11px 0px 10px 0px;
+}
+
+.subtype-content p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: 'Harriet Text';
+  color: #CECECE;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.tablet {
+  width: 35.35px;
+  height: 40.4px;
+}
+
+.newspaper {
+  width: 44px;
+  height: 29px;
+}
+
+.dash {
+  margin: 12px 10px 0px 0px;
+  width: 17px;
+  height: 1px;
+  background-color: #FAFAFA;
+}
+
+.select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,42 +451,250 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 5px 0px 0px 0px;
+  text-align: center;
 }
 
-.logo {
-  fill: white;
-  width: 80px;
-  height: 28px;
-  margin-left: 13px;
-}
-
-.log-in {
-  color: #E1AB99;
-  margin-right: 20px;
+.price {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+  padding-left: 15px;
 }
 
-.log-in p {
+.price h3 {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.digit {
+  font-size: 55px;
+}
+
+.select-button {
+  padding-top: 5px;
+  width: 143px;
+  height: 40px;
+  background-color: #D1201E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select-button h4 {
+  font-family: 'PF Din';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.tryFilter-container {
+  width: 100%;
+  padding: 18px;
+}
+
+.tryFilter-title {
+  color: #FAFAFA;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 35px;
   text-transform: uppercase;
   font-family: 'PF Din';
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: -3px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  letter-spacing: 1px;
 }
 
-.log-in img {
-  width: 14.75px;
-  height: 11.16px;
-  margin-left: 4px;
+.tryFilter-header p {
+  color: #CECECE;
+  font-family: 'Harriet Text';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.tryFilter-article {
+  margin-top: 28px;
+}
+
+.tryFilter-article img {
+  width: 339px;
+  height: 180px;
+  margin-bottom: 15px;
+}
+
+.tryFilter-article h2 {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+
+.tryFilter-article p {
+  color: #CECECE;
+  font-family: 'Harriet Text';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+
+.tryFilter-article .author {
+  font-family: 'Harriet';
+  color: #E1AB99;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.tryFilter-article .author .text {
+  text-transform: uppercase;
+  font-family: 'PF Din';
+  color: #E1AB99;
+  font-weight: 500;
 }
 
 .footer {
+  width: 100%;
   color: #FAFAFA;
-  background-color: black;
+  background-color: #1A1A1A;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 48px;
+}
+
+.footer h1 {
+  font-size: 29.25px;
+  font-weight: 300;
+  line-height: 41px;
+}
+
+.footer h3 {
+  font-family: 'Harriet Text';
+  color: #CECECE;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.sign-up-container {
+  padding: 40px;
+  background-color: #292929;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sign-up {
+  margin-top: 16px;
+  width: 338px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button {
+  padding-top: 4px;
+  width: 120px;
+  height: 40px;
+  background-color: #D1201E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'PF Din';
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+input[type=text] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 40px;
+  padding: 4px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  color: #292929;
+  font-family: 'PF Din';
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.logo-container {
+  padding: 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-container img {
+  width: 160px;
+}
+
+.logo-container p {
+  margin-top: 8px;
+  font-family: 'Harriet Text';
+  color: #CECECE;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
 }
 

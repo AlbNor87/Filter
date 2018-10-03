@@ -1,0 +1,26 @@
+.saidAboutFilter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    width: 100%;
+    height: 350px;
+}
+
+.saidAboutFilter-title {
+    margin-top: 40px;
+    padding-left: 18px;
+    text-transform: uppercase;
+    font-family: 'PF Din';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 27px;
+    align-self: flex-start;
+}
+
+.swiper {
+    background-color: $FilterPink;
+    width: 338px;
+    height: 193px;
+}

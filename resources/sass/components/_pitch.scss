@@ -1,0 +1,33 @@
+.pitch-container {
+    position: relative;
+    margin-top: 16px;
+    width: 100%;
+    height: 400px;
+    background-color: $FilterBlack;
+}
+
+.pitch-article-container {
+    position: absolute;
+    z-index: 1;
+    padding: 18px;
+}
+
+.pitch-article {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.pitch-title {
+    color: $FilterWhite;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pitch-content {
+    font-family: 'Harriet Text';
+    color: $FilterGreyLight;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}

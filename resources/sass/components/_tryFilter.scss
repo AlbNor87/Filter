@@ -1,0 +1,69 @@
+.tryFilter-container {
+    width: 100%;
+    padding: 18px;
+}
+
+.tryFilter-title {
+    color: $FilterWhite;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-family: 'PF Din';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    align-self: flex-start;
+    letter-spacing: 1px;
+}
+
+.tryFilter-header {
+    p {
+        color: $FilterGreyLight;
+        font-family: 'Harriet Text';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+}
+
+.tryFilter-article {
+    margin-top: 28px;
+    img {
+        width: 339px;
+        height: 180px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 26px;
+        margin-bottom: 4px;
+    }
+
+    p {
+        color: $FilterGreyLight;
+        font-family: 'Harriet Text';
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        margin-bottom: 8px;
+    }
+
+    .author {
+        font-family: 'Harriet';
+        color: $FilterPink;
+        font-weight: 700;
+        font-size: 12px;
+        letter-spacing: 1px;
+        .text {
+            text-transform: uppercase;
+            font-family: 'PF Din';
+            color: $FilterPink;
+            font-weight: 500;
+        }
+    }
+
+}
+

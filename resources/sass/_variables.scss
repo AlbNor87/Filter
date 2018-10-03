@@ -1,6 +1,7 @@
 // Colors
 $FilterWhite: #FAFAFA;
 $FilterGreyLight: #CECECE;
+$FilterGrey: #363636;
 $FilterGreyDark: #292929;
 $FilterBlack: #1A1A1A;
 $FilterGold: #DEC05F;
@@ -27,7 +28,7 @@ $FilterPink: #E1AB99;
 }
 
 @font-face {
-    font-family: 'HarrietText';
+    font-family: 'Harriet Text';
     font-weight: 500;
     src: url('/fonts/HarrietTextRegular.otf') format('opentype');
 }

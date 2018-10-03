@@ -4,9 +4,10 @@
     background-color: $FilterBlack;
     display: flex;
     flex-direction: column;
-    padding-right: 17px;
-    padding-left: 17px;
+    padding-right: 18px;
+    padding-left: 18px;
     color: $FilterWhite;
+    // align-items: center;
 }
 
 .title {
@@ -16,13 +17,14 @@
     font-size: 32px;
     margin-top: 46px;
     margin-bottom: 12px;
+    line-height: 35px;
 }
 
 .intro {
-    font-family: 'HarrietText';
+    font-family: 'Harriet Text';
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 22px;
     color: $FilterGreyLight;
     text-shadow: 2px 4px 6px hsla(0, 0, 0, 0.16);
 }
@@ -66,6 +68,7 @@
 
 .testa {
     position: fixed;
+    z-index: 2;
     top: 599px; 
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -80,7 +83,7 @@
         font-family: 'PF Din';
         text-transform: uppercase;
         text-align: center;
-        letter-spacing: 20;
+        // letter-spacing: 20;
         font-size: 24px;
         font-weight: 500;
         color: $FilterBlack;

@@ -1,0 +1,23 @@
+.gradient-left {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-image: linear-gradient($FilterBlack, $FilterGrey);
+    // background-image: linear-gradient(to bottom right, $FilterGrey, $FilterBlack);
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.gradient-right {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-image: linear-gradient($FilterGrey, $FilterBlack);
+    // background-image: linear-gradient(to bottom right, $FilterGrey, $FilterBlack);
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}

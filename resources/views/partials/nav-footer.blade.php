@@ -1,5 +1,19 @@
 <nav class="footer">
-
-    <H1>Footer</H1>
+    
+    <div class="sign-up-container">
+        <h1>Nyfiken?</h1>
+        <h3>Anmäl dig till Filters nyhetsbrev</h3>
+        <form class="sign-up" action="">
+                <input type="text" placeholder="exempel@email.com">
+                <div class="button">
+                    Skicka
+                </div>
+        </form>
+    </div>
+    
+    <div class="logo-container">
+        <img src="/images/logo.svg" alt="Filter logga">
+        <p>© Copyright Offside Press 2018</p>
+    </div>  
     
 </nav>

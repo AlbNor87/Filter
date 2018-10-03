@@ -1,0 +1,116 @@
+.subscription-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 18px;
+}
+
+.subscription-title {
+    position: absolute;
+    margin-top: 18px;
+    color: $FilterWhite;
+    text-transform: uppercase;
+    font-family: 'PF Din';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    align-self: flex-start;
+    letter-spacing: 1px;
+}
+
+.subtype-container {
+    margin-top: 18px;
+    width: 100%;
+    background-color: $FilterGrey;
+    padding: 16px 16px 10px 16px;
+}
+
+.extra-top-margin {
+    margin-top: 58px;
+}
+
+.subtype-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subtype-title {
+    color: $FilterWhite;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.subtype-content {
+    display: flex;
+    margin: 11px 0px 10px 0px;
+    p {
+        flex: 1;
+        font-family: 'Harriet Text';
+        color: $FilterGreyLight;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+    }
+}
+
+.tablet {
+    width: 35.35px;
+    height: 40.4px;
+}
+
+.newspaper {
+    width: 44px;
+    height: 29px;
+}
+
+.dash {
+    margin: 12px 10px 0px 0px;
+    width: 17px;
+    height: 1px;
+    background-color: $FilterWhite;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+
+}
+
+.price {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    h3 {
+        font-weight: 300;
+        font-size: 18px;
+    }
+}
+
+.digit {
+    font-size: 55px;
+}
+
+.select-button {
+    padding-top: 5px;
+    width: 143px;
+    height: 40px;
+    background-color: $FilterRed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h4 {
+        font-family: 'PF Din';
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+}

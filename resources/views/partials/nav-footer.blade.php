@@ -5,9 +5,7 @@
         <h3>Anmäl dig till Filters nyhetsbrev</h3>
         <form class="sign-up" action="">
                 <input type="text" placeholder="exempel@email.com">
-                <div class="button">
-                    Skicka
-                </div>
+                <input class="submit" type="submit" value="Skicka">
         </form>
     </div>
     

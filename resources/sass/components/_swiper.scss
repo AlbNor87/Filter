@@ -1,0 +1,26 @@
+.swiper-container {
+    width: 338px;
+    height: 193px;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: $FilterPink;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.quoted {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: $FilterWhite;
+}

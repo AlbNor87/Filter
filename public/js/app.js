@@ -13993,11 +13993,16 @@ module.exports = __webpack_require__(58);
 
 /***/ }),
 /* 13 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 __webpack_require__(14);
 
 window.Vue = __webpack_require__(37);
+
+// import Swiper from 'swiper';
+// import 'swiper/dist/swiper.css';
+// Vue.use(Swiper);
 
 Vue.component('intro', __webpack_require__(40));
 Vue.component('library', __webpack_require__(43));
@@ -14005,10 +14010,17 @@ Vue.component('pitch', __webpack_require__(46));
 Vue.component('saidaboutfilter', __webpack_require__(49));
 Vue.component('subscription', __webpack_require__(52));
 Vue.component('tryfilter', __webpack_require__(55));
+Vue.component('swiper', __webpack_require__(64));
 
 var app = new Vue({
     el: '#app'
 });
+
+var swiper = new Vue({
+    el: '#swiper'
+});
+
+__webpack_require__(73);
 
 /***/ }),
 /* 14 */
@@ -47353,6 +47365,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -47376,17 +47396,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "intro-container" }, [
-      _c("h1", { staticClass: "title" }, [
-        _vm._v("Granskar, underhåller & fördjupar")
-      ]),
-      _vm._v(" "),
-      _c("h3", { staticClass: "intro" }, [
-        _vm._v(
-          "Filter har gjort det till en dygd att gå över ån efter vatten. Vi ifrågasätter vedertagna »sanningar« och vänder på de extra stenarna för att hitta detaljer som ger nya perspektiv."
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "magazine-container" }, [
+      _c("div", { staticClass: "magazine-container desktop" }, [
         _c("div", { staticClass: "magazine-1" }),
         _vm._v(" "),
         _c("div", { staticClass: "magazine-2" }),
@@ -47394,8 +47404,28 @@ var staticRenderFns = [
         _c("div", { staticClass: "magazine-3" })
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "testa" }, [
-        _c("h3", [_vm._v("Testa en månad gratis")])
+      _c("div", { staticClass: "intro-content" }, [
+        _c("h1", { staticClass: "title" }, [
+          _vm._v("Granskar, underhåller & fördjupar")
+        ]),
+        _vm._v(" "),
+        _c("h3", { staticClass: "intro" }, [
+          _vm._v(
+            "Filter har gjort det till en dygd att gå över ån efter vatten. Vi ifrågasätter vedertagna »sanningar« och vänder på de extra stenarna för att hitta detaljer som ger nya perspektiv."
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "testa-desktop" }, [
+          _c("h3", [_vm._v("Testa en månad gratis")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "magazine-container mobile" }, [
+        _c("div", { staticClass: "magazine-1" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "magazine-2" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "magazine-3" })
       ])
     ])
   }
@@ -47474,6 +47504,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -47499,6 +47534,10 @@ var staticRenderFns = [
     return _c("div", { staticClass: "library-container" }, [
       _c("div", { staticClass: "library" }, [
         _c("div", { staticClass: "library-gradient" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "testa-mobile" }, [
+          _c("h3", [_vm._v("Testa en månad gratis")])
+        ]),
         _vm._v(" "),
         _c("h2", { staticClass: "subtitle" }, [
           _vm._v("Över 500 artiklar "),
@@ -47738,6 +47777,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -47753,22 +47794,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "saidAboutFilter-container" }, [
+    _c("h2", { staticClass: "saidAboutFilter-title" }, [
+      _vm._v("Sagt om filter")
+    ]),
+    _vm._v(" "),
+    _c("div", { attrs: { id: "swiper" } }, [_c("swiper")], 1)
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "saidAboutFilter-container" }, [
-      _c("h2", { staticClass: "saidAboutFilter-title" }, [
-        _vm._v("Sagt om filter")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "swiper" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -47924,6 +47958,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -47964,7 +48016,9 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "dash" }),
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
           _vm._v(" "),
           _c("p", [
             _vm._v("Full tillgång till över 500 artiklar på Filters webbplats")
@@ -47972,19 +48026,25 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "dash" }),
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v("Diskutera artiklar med läsare och skribenter")])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "dash" }),
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v("Lyssna eller läs - välj själv")])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "dash" }),
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v("Säg upp när du vill")])
         ]),
@@ -47997,7 +48057,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "price" }, [
             _c("h3", [
               _c("span", { staticClass: "digit" }, [_vm._v("19")]),
-              _vm._v(" kr/Månad")
+              _vm._v(" kr / mån")
             ])
           ])
         ])
@@ -48014,7 +48074,9 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "dash" }),
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
           _vm._v(" "),
           _c("p", [
             _vm._v("Magasinet Filter hem i din brevlåda varannan månad")
@@ -48022,7 +48084,9 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "dash" }),
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
           _vm._v(" "),
           _c("p", [
             _vm._v("Full tillgång till över 500 artiklar på Filters webbplats")
@@ -48030,19 +48094,25 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "dash" }),
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v("Diskutera artiklar med läsare och skribenter")])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "dash" }),
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v("Lyssna eller läs - välj själv")])
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "dash" }),
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
           _vm._v(" "),
           _c("p", [_vm._v("Säg upp när du vill")])
         ]),
@@ -48055,7 +48125,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "price" }, [
             _c("h3", [
               _c("span", { staticClass: "digit" }, [_vm._v("39")]),
-              _vm._v(" kr/Månad")
+              _vm._v(" kr / mån")
             ])
           ])
         ])
@@ -48268,6 +48338,215 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(65)
+/* template */
+var __vue_template__ = __webpack_require__(66)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/Swiper.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-d3ab4aba", Component.options)
+  } else {
+    hotAPI.reload("data-v-d3ab4aba", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    mounted: function mounted() {
+        console.log('Swiper component mounted.');
+    }
+});
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "swiper-container" }, [
+      _c("div", { staticClass: "swiper-wrapper" }, [
+        _c("div", { staticClass: "swiper-slide slide" }, [
+          _c("p", [
+            _vm._v(
+              "“Jag pratar ofta med folk i min omgivning om sådant jag läst i Filter”"
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "quoted" }, [_vm._v("Olle D - Läsare")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-slide slide" }, [
+          _c("p", [
+            _vm._v("“Jag använder ofta Filter när jag brygger kaffe!”")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "quoted" }, [
+            _vm._v("Hannibal Lecter - Psykopat")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-slide slide" }, [
+          _c("p", [
+            _vm._v("“Jag använder nästan alltid Filter på instagram!”")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "quoted" }, [_vm._v("Sauron - Härskare")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "swiper-pagination" })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-d3ab4aba", module.exports)
+  }
+}
+
+/***/ }),
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */
+/***/ (function(module, exports) {
+
+// var mySwiper = new Swiper ('.swiper-container', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: true,
+
+//     // If we need pagination
+//     pagination: {
+//     el: '.swiper-pagination',
+//     dynamicBullets: true,
+//     },
+
+//     // Navigation arrows
+//     navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//     },
+
+//     // And if we need scrollbar
+// //   scrollbar: {
+// //     el: '.swiper-scrollbar',
+// //   },
+// })
+
+var swiper = new Swiper('.swiper-container', {
+  effect: 'coverflow',
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true
+  }
+});
 
 /***/ })
 /******/ ]);

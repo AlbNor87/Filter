@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     // justify-content: center;
+    background-color: $FilterBlack;
     width: 100%;
-    height: 350px;
+    height: 320px;
 }
 
 .saidAboutFilter-title {
@@ -19,8 +20,3 @@
     align-self: flex-start;
 }
 
-.swiper {
-    background-color: $FilterPink;
-    width: 338px;
-    height: 193px;
-}

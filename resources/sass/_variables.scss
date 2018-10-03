@@ -51,3 +51,16 @@ $FilterPink: #E1AB99;
     src: url('/fonts/PfDinLight.otf') format('opentype');
 }
 
+//Mixins
+@mixin bp($point) {
+    @if $point == small {
+      @media (max-width: 768px) { @content; }
+    }
+    @else if $point == medium {
+      @media (min-width: 768px) { @content; }
+    }
+    // @else if $point == large {
+    //   @media (min-width: 1280px)  { @content; }
+    // }
+}
+

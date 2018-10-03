@@ -2,7 +2,9 @@
 
     <div class="saidAboutFilter-container">
         <h2 class="saidAboutFilter-title">Sagt om filter</h2>
-        <div class="swiper"></div>
+        <div id="swiper">
+            <swiper></swiper>
+        </div>
     </div>
     
 </template>

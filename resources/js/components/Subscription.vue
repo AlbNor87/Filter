@@ -14,22 +14,30 @@
             </div>
 
             <div class="subtype-content">
-                <div class="dash"></div>
+                <div class="check">
+                    <img src="/images/check.svg" alt="check">
+                </div>
                 <p>Full tillgång till över 500 artiklar på Filters webbplats</p>
             </div>
 
             <div class="subtype-content">
-                <div class="dash"></div>
+                <div class="check">
+                    <img src="/images/check.svg" alt="check">
+                </div>
                 <p>Diskutera artiklar med läsare och skribenter</p>
             </div>
 
             <div class="subtype-content">
-                <div class="dash"></div>
+                <div class="check">
+                    <img src="/images/check.svg" alt="check">
+                </div>
                 <p>Lyssna eller läs - välj själv</p>
             </div>
 
             <div class="subtype-content">
-                <div class="dash"></div>
+                <div class="check">
+                    <img src="/images/check.svg" alt="check">
+                </div>
                 <p>Säg upp när du vill</p>
             </div>
 
@@ -38,7 +46,7 @@
                     <h4>Välj</h4>
                 </div>
                 <div class="price">
-                    <h3><span class="digit">19</span> kr/Månad</h3>
+                    <h3><span class="digit">19</span> kr / mån</h3>
                 </div>
             </div>
 
@@ -52,27 +60,37 @@
             </div>
 
             <div class="subtype-content">
-                <div class="dash"></div>
+                <div class="check">
+                    <img src="/images/check.svg" alt="check">
+                </div>
                 <p>Magasinet Filter hem i din brevlåda varannan månad</p>
             </div>
 
             <div class="subtype-content">
-                <div class="dash"></div>
+                <div class="check">
+                    <img src="/images/check.svg" alt="check">
+                </div>
                 <p>Full tillgång till över 500 artiklar på Filters webbplats</p>
             </div>
 
             <div class="subtype-content">
-                <div class="dash"></div>
+                <div class="check">
+                    <img src="/images/check.svg" alt="check">
+                </div>
                 <p>Diskutera artiklar med läsare och skribenter</p>
             </div>
 
             <div class="subtype-content">
-                <div class="dash"></div>
+                <div class="check">
+                    <img src="/images/check.svg" alt="check">
+                </div>
                 <p>Lyssna eller läs - välj själv</p>
             </div>
 
             <div class="subtype-content">
-                <div class="dash"></div>
+                <div class="check">
+                    <img src="/images/check.svg" alt="check">
+                </div>
                 <p>Säg upp när du vill</p>
             </div>
 
@@ -81,7 +99,7 @@
                     <h4>Välj</h4>
                 </div>
                 <div class="price">
-                    <h3><span class="digit">39</span> kr/Månad</h3>
+                    <h3><span class="digit">39</span> kr / mån</h3>
                 </div>
             </div>
 

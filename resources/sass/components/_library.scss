@@ -1,40 +1,80 @@
 .library-container {
-    margin-top: 28px;
     width: 100%;
     background-color: $FilterBlack;
+    padding-bottom: 16px;
 }
 
 .library {
     position: relative;
-    width: 100%;
     height: 371px;
     background-image: url('/images/library.png');
     background-size: cover;
     display: flex;
     justify-content: center;
-
-    h2 {
-        margin-top: 20px;
-        z-index: 1;
-        font-family: 'Harriet';
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 1.4;
-        color: $FilterGreyLight;
-        text-shadow: 2px 4px 6px hsla(0, 0, 0, 0.16);
-
+    @include bp(medium) {
+        height: 722px;
+        flex: 1;
+        margin-left: 30px;
+        margin-right: 40px;
+    }
+    @include bp(small) {
+        width: 100%;
     }
 }
 
 .library-gradient {
     position: absolute;
-    top: 5px;
+    top: 0px;
     left: 0;
     width: 100%;
-    height: 75px;
-    background-image: linear-gradient($FilterBlack, rgba(26, 26, 26, 0.8));
+    height: 371px;
+    // background-image: linear-gradient($FilterBlack, rgba(26, 26, 26, 0.8));
+    background-image: linear-gradient(to bottom, $FilterBlack,  rgba(26, 26, 26, 0.8) 40%,rgba(26, 26, 26, 0.2));
+    @include bp(medium) {
+        height: 722px;
+    }
 }
 
 .subtitle {
     text-align: center;
+    margin-top: 131px;
+    z-index: 1;
+    font-family: 'Harriet';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 29px;
+    color: $FilterWhite;
+    text-shadow: 2px 4px 6px hsla(0, 0, 0, 0.16);
+    @include bp(medium) {
+        font-size: 48px;
+        line-height: 60px;
+        text-shadow: 2px 2px 2px hsla(0, 0, 0, 0.4);
+    }
+}
+
+.testa-mobile {
+    position: fixed;
+    z-index: 2;
+    top: 599px; 
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 338px;
+    height: 48px;
+    background-color: $FilterGold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+        font-family: 'PF Din';
+        text-transform: uppercase;
+        text-align: center;
+        // letter-spacing: 20;
+        font-size: 24px;
+        font-weight: 500;
+        color: $FilterBlack;
+    }
+    @include bp(medium) {
+        display: none;
+    }
 }

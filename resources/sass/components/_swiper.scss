@@ -1,6 +1,16 @@
+// .swiper-outer-container {
+//     margin-top: 10px;
+// }
+
 .swiper-container {
     width: 338px;
     height: 193px;
+    margin-top: 4px;
+    @include bp(medium) {
+        width: 95%;
+        max-width: 1280px;
+        height: 350px;
+    }
 }
 
 .slide {
@@ -13,14 +23,73 @@
     background-color: $FilterPink;
     font-weight: 700;
     font-size: 22px;
+    @include bp(medium) {
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+        padding: 0px;
+    }
 }
 
 .quoted {
     font-size: 16px;
     font-weight: 300;
+    @include bp(medium) {
+        margin-top: 16px;
+        font-size: 24px;
+        liine-height: 33px;
+    }
+}
+
+.desktop-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 22px;
+    width: 838px;
+    height: 211px;
+    font-size: 48px;
+    background-image: url('/images/quote_desktop.svg');
+    background-size: contain;
+    background-position: 97.2% 50%;
 }
 
 .swiper-pagination-bullet-active {
     opacity: 1;
     background: $FilterWhite;
 }
+
+.swiper-pagination-bullet {
+    @include bp(medium) {
+        background: $FilterWhite;
+    }
+}
+
+// .swiper-slide {
+//     @include bp(medium) {
+//         width: 300px;
+//     }
+// }
+
+// .swiper-slide.slide.swiper-slide-active {
+//     width: 50%;
+//     margin-right: 50px;
+// }
+// .swiper-slide.slide.swiper-slide-next {
+//     visibility: hidden;
+// }
+// .swiper-slide.slide.swiper-slide-prev {
+//     visibility: hidden;
+
+// }
+
+// .swiper-slide.slide.swiper-slide-duplicate-prev {
+//     visibility: hidden;
+// }
+
+// .swiper-slide.slide.swiper-slide-duplicate.swiper-slide-duplicate-prev {
+//     visibility: hidden;
+// }

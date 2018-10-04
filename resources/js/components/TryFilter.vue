@@ -7,6 +7,8 @@
           <p>Fortfarande inte helt säker på om Filter är något för dig? Här hittar du fyra stycken utvalda gratisartiklar att provsmaka.</p>
         </div>
 
+        <div class="article-container">
+
         <div class="tryFilter-article">
             <img src="/images/tryFilter01.png" alt="Prova Filter bild01">
             <h2>Maffiametoden som erövrade världen</h2>
@@ -26,6 +28,8 @@
             <h2>Fett fusk</h2>
             <p>En god olivolja kan förgylla vilken sallad som helst. Men det finns knappast någon annan matvara som det fuskas så mycket med. Fyra av tio extra jungfruoljor fick underkänt när Hunger skickade dem på test.</p>
             <p class="author"><span class="text">TEXT:</span> IVAR ANDERSSON</p>
+        </div>
+
         </div>
 
 

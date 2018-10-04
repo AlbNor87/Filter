@@ -5,7 +5,8 @@
     // justify-content: center;
     background-color: $FilterBlack;
     width: 100%;
-    height: 320px;
+    // height: 320px;
+    padding-bottom: 50px;
 }
 
 .saidAboutFilter-title {
@@ -18,5 +19,9 @@
     letter-spacing: 1px;
     line-height: 27px;
     align-self: flex-start;
+    @include bp(medium) {
+        font-size: 32px;
+        padding-left: 48px;
+    }
 }
 

@@ -28,8 +28,17 @@
     }
 }
 
+.article-container {
+    @include bp(medium) {
+        display: flex;
+    } 
+}
+
 .tryFilter-article {
     margin-top: 28px;
+    @include bp(medium) {
+        flex: 1;
+    } 
     img {
         width: 339px;
         height: 180px;

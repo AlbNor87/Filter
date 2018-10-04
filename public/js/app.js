@@ -13988,14 +13988,13 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-module.exports = __webpack_require__(58);
+module.exports = __webpack_require__(62);
 
 
 /***/ }),
 /* 13 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
 __webpack_require__(14);
 
 window.Vue = __webpack_require__(37);
@@ -14010,7 +14009,7 @@ Vue.component('pitch', __webpack_require__(46));
 Vue.component('saidaboutfilter', __webpack_require__(49));
 Vue.component('subscription', __webpack_require__(52));
 Vue.component('tryfilter', __webpack_require__(55));
-Vue.component('swiper', __webpack_require__(64));
+Vue.component('swiper', __webpack_require__(58));
 
 var app = new Vue({
     el: '#app'
@@ -14020,7 +14019,7 @@ var swiper = new Vue({
     el: '#swiper'
 });
 
-__webpack_require__(73);
+__webpack_require__(61);
 
 /***/ }),
 /* 14 */
@@ -47672,11 +47671,15 @@ var staticRenderFns = [
             _vm._v("Ditt intresse i fokus")
           ]),
           _vm._v(" "),
-          _c("p", { staticClass: "pitch-content" }, [
-            _vm._v(
-              "Läser du på bussen, eller lyssnar när du städar? Ta del av vårt berikade arkiv på det sätt som passar dig bäst."
-            )
-          ])
+          _c(
+            "p",
+            { staticClass: "pitch-content extra-padding-right-desktop" },
+            [
+              _vm._v(
+                "Läser du på bussen, eller lyssnar när du städar? Ta del av vårt berikade arkiv på det sätt som passar dig bäst."
+              )
+            ]
+          )
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "pitch-article" }, [
@@ -47689,16 +47692,20 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "pitch-article" }, [
+        _c("div", { staticClass: "pitch-article no-margin" }, [
           _c("h2", { staticClass: "pitch-title" }, [
             _vm._v("Trovärdig kvalitét")
           ]),
           _vm._v(" "),
-          _c("p", { staticClass: "pitch-content" }, [
-            _vm._v(
-              "Vi har belönats med några av Sveriges tyngsta journalistiska utmärkelser som Stora journalistpriset, Guldspaden, Årets tidskrift och Publicistklubbens stora pris."
-            )
-          ])
+          _c(
+            "p",
+            { staticClass: "pitch-content extra-padding-right-desktop" },
+            [
+              _vm._v(
+                "Vi har belönats med några av Sveriges tyngsta journalistiska utmärkelser som Stora journalistpriset, Guldspaden, Årets tidskrift och Publicistklubbens stora pris."
+              )
+            ]
+          )
         ])
       ]),
       _vm._v(" "),
@@ -47976,6 +47983,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -48002,130 +48013,143 @@ var staticRenderFns = [
       _c("div", { staticClass: "gradient-left" }),
       _vm._v(" "),
       _c("h2", { staticClass: "subscription-title" }, [
-        _vm._v("Vad passar dig")
+        _vm._v("Vad passar dig?")
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "subtype-container extra-top-margin" }, [
-        _c("div", { staticClass: "subtype-header" }, [
-          _c("h2", { staticClass: "subtype-title" }, [_vm._v("Webb")]),
-          _vm._v(" "),
-          _c("img", {
-            staticClass: "tablet",
-            attrs: { src: "/images/tablet.svg", alt: "tablet" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "check" }, [
-            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v("Full tillgång till över 500 artiklar på Filters webbplats")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "check" }, [
-            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
-          ]),
-          _vm._v(" "),
-          _c("p", [_vm._v("Diskutera artiklar med läsare och skribenter")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "check" }, [
-            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
-          ]),
-          _vm._v(" "),
-          _c("p", [_vm._v("Lyssna eller läs - välj själv")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "check" }, [
-            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
-          ]),
-          _vm._v(" "),
-          _c("p", [_vm._v("Säg upp när du vill")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "select" }, [
-          _c("div", { staticClass: "select-button" }, [
-            _c("h4", [_vm._v("Välj")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "price" }, [
-            _c("h3", [
-              _c("span", { staticClass: "digit" }, [_vm._v("19")]),
-              _vm._v(" kr / mån")
+      _c("div", { staticClass: "subtype-wrapper" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "subtype-container extra-top-margin subtype-desktop-left"
+          },
+          [
+            _c("div", { staticClass: "subtype-header" }, [
+              _c("h2", { staticClass: "subtype-title" }, [_vm._v("Webb")]),
+              _vm._v(" "),
+              _c("img", {
+                staticClass: "tablet",
+                attrs: { src: "/images/tablet.svg", alt: "tablet" }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "subtype-content" }, [
+              _c("div", { staticClass: "check" }, [
+                _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Full tillgång till över 500 artiklar på Filters webbplats"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "subtype-content" }, [
+              _c("div", { staticClass: "check" }, [
+                _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Diskutera artiklar med läsare och skribenter")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "subtype-content" }, [
+              _c("div", { staticClass: "check" }, [
+                _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Lyssna eller läs - välj själv")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "subtype-content" }, [
+              _c("div", { staticClass: "check" }, [
+                _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Säg upp när du vill")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "select" }, [
+              _c("div", { staticClass: "select-button" }, [
+                _c("h4", [_vm._v("Välj")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "price" }, [
+                _c("h3", [
+                  _c("span", { staticClass: "digit" }, [_vm._v("19")]),
+                  _vm._v(" kr / mån")
+                ])
+              ])
             ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "subtype-container" }, [
-        _c("div", { staticClass: "subtype-header" }, [
-          _c("h2", { staticClass: "subtype-title" }, [_vm._v("Magasin")]),
-          _vm._v(" "),
-          _c("img", {
-            staticClass: "newspaper",
-            attrs: { src: "/images/newspaper.svg", alt: "tablet" }
-          })
-        ]),
+          ]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "check" }, [
-            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+        _c("div", { staticClass: "subtype-container" }, [
+          _c("div", { staticClass: "subtype-header" }, [
+            _c("h2", { staticClass: "subtype-title" }, [_vm._v("Magasin")]),
+            _vm._v(" "),
+            _c("img", {
+              staticClass: "newspaper",
+              attrs: { src: "/images/newspaper.svg", alt: "tablet" }
+            })
           ]),
           _vm._v(" "),
-          _c("p", [
-            _vm._v("Magasinet Filter hem i din brevlåda varannan månad")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "check" }, [
-            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          _c("div", { staticClass: "subtype-content" }, [
+            _c("div", { staticClass: "check" }, [
+              _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v("Magasinet Filter hem i din brevlåda varannan månad")
+            ])
           ]),
           _vm._v(" "),
-          _c("p", [
-            _vm._v("Full tillgång till över 500 artiklar på Filters webbplats")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "check" }, [
-            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          _c("div", { staticClass: "subtype-content" }, [
+            _c("div", { staticClass: "check" }, [
+              _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Full tillgång till över 500 artiklar på Filters webbplats"
+              )
+            ])
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v("Diskutera artiklar med läsare och skribenter")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "check" }, [
-            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          _c("div", { staticClass: "subtype-content" }, [
+            _c("div", { staticClass: "check" }, [
+              _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Diskutera artiklar med läsare och skribenter")])
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v("Lyssna eller läs - välj själv")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "subtype-content" }, [
-          _c("div", { staticClass: "check" }, [
-            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          _c("div", { staticClass: "subtype-content" }, [
+            _c("div", { staticClass: "check" }, [
+              _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Lyssna eller läs - välj själv")])
           ]),
           _vm._v(" "),
-          _c("p", [_vm._v("Säg upp när du vill")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "select" }, [
-          _c("div", { staticClass: "select-button" }, [
-            _c("h4", [_vm._v("Välj")])
+          _c("div", { staticClass: "subtype-content" }, [
+            _c("div", { staticClass: "check" }, [
+              _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Säg upp när du vill")])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "price" }, [
-            _c("h3", [
-              _c("span", { staticClass: "digit" }, [_vm._v("39")]),
-              _vm._v(" kr / mån")
+          _c("div", { staticClass: "select" }, [
+            _c("div", { staticClass: "select-button" }, [
+              _c("h4", [_vm._v("Välj")])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "price" }, [
+              _c("h3", [
+                _c("span", { staticClass: "digit" }, [_vm._v("39")]),
+                _vm._v(" kr / mån")
+              ])
             ])
           ])
         ])
@@ -48230,6 +48254,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -48265,60 +48293,71 @@ var staticRenderFns = [
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "tryFilter-article" }, [
-        _c("img", {
-          attrs: { src: "/images/tryFilter01.png", alt: "Prova Filter bild01" }
-        }),
-        _vm._v(" "),
-        _c("h2", [_vm._v("Maffiametoden som erövrade världen")]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "Därför stavas framtidens viktigaste konsumentmärkning Fair Tax."
-          )
+      _c("div", { staticClass: "article-container" }, [
+        _c("div", { staticClass: "tryFilter-article" }, [
+          _c("img", {
+            attrs: {
+              src: "/images/tryFilter01.png",
+              alt: "Prova Filter bild01"
+            }
+          }),
+          _vm._v(" "),
+          _c("h2", [_vm._v("Maffiametoden som erövrade världen")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Därför stavas framtidens viktigaste konsumentmärkning Fair Tax."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "author" }, [
+            _c("span", { staticClass: "text" }, [_vm._v("TEXT:")]),
+            _vm._v(" JOHAN FRISK")
+          ])
         ]),
         _vm._v(" "),
-        _c("p", { staticClass: "author" }, [
-          _c("span", { staticClass: "text" }, [_vm._v("TEXT:")]),
-          _vm._v(" JOHAN FRISK")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "tryFilter-article" }, [
-        _c("img", {
-          attrs: { src: "/images/tryFilter02.png", alt: "Prova Filter bild02" }
-        }),
-        _vm._v(" "),
-        _c("h2", [_vm._v("Den stora oron")]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "Allt fler svenskar odlar, går kurser i självhushållning och drömmer om att flytta ut på landet. Vad är de egentligen ute efter?"
-          )
+        _c("div", { staticClass: "tryFilter-article" }, [
+          _c("img", {
+            attrs: {
+              src: "/images/tryFilter02.png",
+              alt: "Prova Filter bild02"
+            }
+          }),
+          _vm._v(" "),
+          _c("h2", [_vm._v("Den stora oron")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Allt fler svenskar odlar, går kurser i självhushållning och drömmer om att flytta ut på landet. Vad är de egentligen ute efter?"
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "author" }, [
+            _c("span", { staticClass: "text" }, [_vm._v("TEXT:")]),
+            _vm._v(" ERIK EJE ALMQVIST")
+          ])
         ]),
         _vm._v(" "),
-        _c("p", { staticClass: "author" }, [
-          _c("span", { staticClass: "text" }, [_vm._v("TEXT:")]),
-          _vm._v(" ERIK EJE ALMQVIST")
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "tryFilter-article" }, [
-        _c("img", {
-          attrs: { src: "/images/tryFilter03.png", alt: "Prova Filter bild03" }
-        }),
-        _vm._v(" "),
-        _c("h2", [_vm._v("Fett fusk")]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v(
-            "En god olivolja kan förgylla vilken sallad som helst. Men det finns knappast någon annan matvara som det fuskas så mycket med. Fyra av tio extra jungfruoljor fick underkänt när Hunger skickade dem på test."
-          )
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "author" }, [
-          _c("span", { staticClass: "text" }, [_vm._v("TEXT:")]),
-          _vm._v(" IVAR ANDERSSON")
+        _c("div", { staticClass: "tryFilter-article" }, [
+          _c("img", {
+            attrs: {
+              src: "/images/tryFilter03.png",
+              alt: "Prova Filter bild03"
+            }
+          }),
+          _vm._v(" "),
+          _c("h2", [_vm._v("Fett fusk")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "En god olivolja kan förgylla vilken sallad som helst. Men det finns knappast någon annan matvara som det fuskas så mycket med. Fyra av tio extra jungfruoljor fick underkänt när Hunger skickade dem på test."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "author" }, [
+            _c("span", { staticClass: "text" }, [_vm._v("TEXT:")]),
+            _vm._v(" IVAR ANDERSSON")
+          ])
         ])
       ])
     ])
@@ -48335,25 +48374,14 @@ if (false) {
 
 /***/ }),
 /* 58 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 59 */,
-/* 60 */,
-/* 61 */,
-/* 62 */,
-/* 63 */,
-/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(65)
+var __vue_script__ = __webpack_require__(59)
 /* template */
-var __vue_template__ = __webpack_require__(66)
+var __vue_template__ = __webpack_require__(60)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -48392,11 +48420,48 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 65 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -48438,7 +48503,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 66 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -48452,38 +48517,88 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "swiper-container" }, [
-      _c("div", { staticClass: "swiper-wrapper" }, [
-        _c("div", { staticClass: "swiper-slide slide" }, [
-          _c("p", [
-            _vm._v(
-              "“Jag pratar ofta med folk i min omgivning om sådant jag läst i Filter”"
-            )
+    return _c("div", [
+      _c("div", { staticClass: "swiper-container mobile" }, [
+        _c("div", { staticClass: "swiper-wrapper" }, [
+          _c("div", { staticClass: "swiper-slide slide" }, [
+            _c("p", [
+              _vm._v(
+                "“Jag pratar ofta med folk i min omgivning om sådant jag läst i Filter”"
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "quoted" }, [_vm._v("Olle D - Läsare")])
           ]),
           _vm._v(" "),
-          _c("p", { staticClass: "quoted" }, [_vm._v("Olle D - Läsare")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "swiper-slide slide" }, [
-          _c("p", [
-            _vm._v("“Jag använder ofta Filter när jag brygger kaffe!”")
+          _c("div", { staticClass: "swiper-slide slide" }, [
+            _c("p", [
+              _vm._v("“Jag använder ofta Filter när jag brygger kaffe!”")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "quoted" }, [
+              _vm._v("Hannibal Lecter - Psykopat")
+            ])
           ]),
           _vm._v(" "),
-          _c("p", { staticClass: "quoted" }, [
-            _vm._v("Hannibal Lecter - Psykopat")
+          _c("div", { staticClass: "swiper-slide slide" }, [
+            _c("p", [
+              _vm._v("“Jag använder nästan alltid Filter på instagram!”")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "quoted" }, [
+              _vm._v("Sauron - Mörkrets Härskare")
+            ])
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "swiper-slide slide" }, [
-          _c("p", [
-            _vm._v("“Jag använder nästan alltid Filter på instagram!”")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "quoted" }, [_vm._v("Sauron - Härskare")])
-        ])
+        _c("div", { staticClass: "swiper-pagination" })
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "swiper-pagination" })
+      _c("div", { staticClass: "swiper-container desktop" }, [
+        _c("div", { staticClass: "swiper-wrapper" }, [
+          _c("div", { staticClass: "swiper-slide slide" }, [
+            _c("div", { staticClass: "desktop-slide" }, [
+              _c("p", [
+                _vm._v(
+                  "“Jag pratar ofta med folk i min omgivning om sådant jag läst i Filter”"
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "quoted" }, [_vm._v("Olle D - Läsare")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide slide" }, [
+            _c("div", { staticClass: "desktop-slide" }, [
+              _c("p", [
+                _vm._v("“Jag använder ofta Filter när jag brygger kaffe!”")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "quoted" }, [
+                _vm._v("Hannibal Lecter - Psykopat")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide slide" }, [
+            _c("div", { staticClass: "desktop-slide" }, [
+              _c("p", [
+                _vm._v("“Jag använder nästan alltid Filter på instagram!”")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "quoted" }, [
+                _vm._v("Sauron - Mörkrets Härskare")
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-pagination" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-button-prev" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "swiper-button-next" })
+      ])
     ])
   }
 ]
@@ -48497,13 +48612,7 @@ if (false) {
 }
 
 /***/ }),
-/* 67 */,
-/* 68 */,
-/* 69 */,
-/* 70 */,
-/* 71 */,
-/* 72 */,
-/* 73 */
+/* 61 */
 /***/ (function(module, exports) {
 
 // var mySwiper = new Swiper ('.swiper-container', {
@@ -48529,7 +48638,7 @@ if (false) {
 // //   },
 // })
 
-var swiper = new Swiper('.swiper-container', {
+var swiperMobile = new Swiper('.swiper-container.mobile', {
   effect: 'coverflow',
   grabCursor: true,
   loop: true,
@@ -48545,8 +48654,41 @@ var swiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
     dynamicBullets: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
   }
 });
+
+var swiperDesktop = new Swiper('.swiper-container.desktop', {
+  // effect: 'coverflow',
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  // coverflowEffect: {
+  //   rotate: 50,
+  //   stretch: 0,
+  //   depth: 100,
+  //   modifier: 1,
+  //   slideShadows : true,
+  // },
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+});
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

@@ -8,7 +8,7 @@
             
             <div class="pitch-article">
                 <h2 class="pitch-title">Ditt intresse i fokus</h2>
-                <p class="pitch-content">Läser du på bussen, eller lyssnar när du städar? Ta del av vårt berikade arkiv på det sätt som passar dig bäst.</p>
+                <p class="pitch-content extra-padding-right-desktop">Läser du på bussen, eller lyssnar när du städar? Ta del av vårt berikade arkiv på det sätt som passar dig bäst.</p>
             </div>
 
             <div class="pitch-article">
@@ -16,9 +16,9 @@
                 <p class="pitch-content">Vi är ett av de mest omtalade magasinen i Sverige som öppnar vägar för reflektion och diskussion. Lyft din åsikt!</p>
             </div>
 
-            <div class="pitch-article">
+            <div class="pitch-article no-margin">
                 <h2 class="pitch-title">Trovärdig kvalitét</h2>
-                <p class="pitch-content">Vi har belönats med några av Sveriges tyngsta journalistiska utmärkelser som Stora journalistpriset, Guldspaden, Årets tidskrift och Publicistklubbens stora pris.</p>
+                <p class="pitch-content extra-padding-right-desktop">Vi har belönats med några av Sveriges tyngsta journalistiska utmärkelser som Stora journalistpriset, Guldspaden, Årets tidskrift och Publicistklubbens stora pris.</p>
             </div>
             
         </div>

@@ -21,7 +21,7 @@
 // //   },
 // })
 
-var swiper = new Swiper('.swiper-container', {
+var swiperMobile = new Swiper('.swiper-container.mobile', {
     effect: 'coverflow',
     grabCursor: true,
     loop: true,
@@ -38,4 +38,31 @@ var swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       dynamicBullets: true,
     },
-  });
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+});
+
+var swiperDesktop = new Swiper('.swiper-container.desktop', {
+    // effect: 'coverflow',
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    // coverflowEffect: {
+    //   rotate: 50,
+    //   stretch: 0,
+    //   depth: 100,
+    //   modifier: 1,
+    //   slideShadows : true,
+    // },
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+});

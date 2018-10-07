@@ -1,0 +1,231 @@
+.tryItOut-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 53px;
+    background-color: $FilterBlack;
+}
+
+.tryItOut-title {
+    position: absolute;
+    top: 30px;
+    padding-left: 18px;
+    color: $FilterWhite;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 35px;
+    @include bp(medium) {
+        margin-left: 48px;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 1px;
+    }
+}
+
+.tryItOut-subtitle {
+    margin-top: 18px;
+    padding-left: 18px;
+    font-family: 'Harriet Text';
+    color: $FilterGreyLight;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.spread-sheet {
+    position: relative;
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+.column-title {
+    padding-bottom: 4px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.column.web {
+    width: 50%;
+    background-color: $FilterGreyDark;
+}
+
+.column.magazine {
+    width: 50%;
+    background-color: $FilterGrey;
+}
+
+.row {
+    width: 100%;
+    min-height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $FilterGrey;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.spread-sheet-tablet, .spread-sheet-newspaper {
+    margin-bottom: 12px;
+} 
+
+.spread-sheet-tablet {
+    width: 19px;
+    height: 21px;
+}
+
+.spread-sheet-newspaper {
+    width: 32px;
+    height: 21px;
+}
+
+.center-text {
+    position: absolute;
+    top: 112px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: $FilterWhite;
+    text-transform: uppercase;
+    font-family: 'PF Din';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.spread-sheet-digit {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.spread-cross {
+    width: 24px;
+}
+.spread-check {
+    width: 24px;
+}
+
+.spread-extra-top-padding {
+    padding-top: 48px;
+}
+
+.mailbox {
+    top: 201px;   
+}
+
+.web-access {
+    top: 291px;   
+}
+
+.digital-form {
+    top: 375px;
+}
+
+.no-border {
+    border: none;
+}
+
+.spread-select-button {
+    padding-top: 5px;
+    width: 50%;
+    height: 48px;
+    background-color: $FilterRed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    h4 {
+        font-family: 'PF Din';
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+    // @include bp(medium) {
+    //     margin: 7px 10px 0px 0px;
+    //     width: 284px;
+    //     height: 56px;
+    //     h4 {
+    //         font-size: 32px;
+    //     } 
+    // } 
+}
+
+.border-right {
+    border-right: 1px solid $FilterGrey;
+}
+
+.border-left {
+    border-left: 1px solid $FilterGrey;
+}
+
+.always-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 24px;
+    padding: 18px;
+    padding-top: 72px;
+    background-color: $FilterBlack;
+}
+
+.always-title {
+    position: absolute;
+    top: 41px;
+    color: $FilterWhite;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: 'PF Din';
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+
+    @include bp(medium) {
+        margin-left: 48px;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 1px;
+    }
+}
+
+.always-content {
+    display: flex;
+
+    margin-bottom: 18px;
+    @include bp(medium) {
+        margin: 0px 0px 16px 0px;
+    } 
+    p {
+        flex: 1;
+        font-family: 'Harriet Text';
+        color: $FilterGreyLight;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        @include bp(medium) {
+            font-size: 24px;   
+            max-width: 462px;
+            line-height: 33px;
+        } 
+    }
+}

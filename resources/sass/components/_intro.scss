@@ -9,7 +9,6 @@
     color: $FilterWhite;
     @include bp(medium) {
         height: 600px;
-        margin-top: 48px;
         flex-direction: row;
         padding-right: 48px;
         padding-left: 48px;

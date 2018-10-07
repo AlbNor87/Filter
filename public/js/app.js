@@ -14003,23 +14003,36 @@ window.Vue = __webpack_require__(37);
 // import 'swiper/dist/swiper.css';
 // Vue.use(Swiper);
 
-Vue.component('intro', __webpack_require__(40));
-Vue.component('library', __webpack_require__(43));
-Vue.component('pitch', __webpack_require__(46));
-Vue.component('saidaboutfilter', __webpack_require__(49));
-Vue.component('subscription', __webpack_require__(52));
-Vue.component('tryfilter', __webpack_require__(55));
-Vue.component('swiper', __webpack_require__(58));
 
-var app = new Vue({
-    el: '#app'
-});
+//Landing page
+Vue.component('intro', __webpack_require__(67));
+Vue.component('library', __webpack_require__(70));
+Vue.component('pitch', __webpack_require__(73));
+Vue.component('saidaboutfilter', __webpack_require__(76));
+Vue.component('subscription', __webpack_require__(79));
+Vue.component('tryfilter', __webpack_require__(82));
+Vue.component('swiper', __webpack_require__(85));
 
-var swiper = new Vue({
-    el: '#swiper'
-});
+if (window.location.pathname === '/') {
+    var app = new Vue({
+        el: '#app'
+    });
+
+    var swiper = new Vue({
+        el: '#swiper'
+    });
+}
 
 __webpack_require__(61);
+
+//Try It Out page
+Vue.component('tryitout', __webpack_require__(88));
+
+if (window.location.pathname === '/testa') {
+    var testa = new Vue({
+        el: '#testa'
+    });
+}
 
 /***/ }),
 /* 14 */
@@ -47293,15 +47306,119 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(7)))
 
 /***/ }),
-/* 40 */
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */
+/***/ (function(module, exports) {
+
+// var mySwiper = new Swiper ('.swiper-container', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: true,
+
+//     // If we need pagination
+//     pagination: {
+//     el: '.swiper-pagination',
+//     dynamicBullets: true,
+//     },
+
+//     // Navigation arrows
+//     navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//     },
+
+//     // And if we need scrollbar
+// //   scrollbar: {
+// //     el: '.swiper-scrollbar',
+// //   },
+// })
+
+var swiperMobile = new Swiper('.swiper-container.mobile', {
+  effect: 'coverflow',
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+});
+
+var swiperDesktop = new Swiper('.swiper-container.desktop', {
+  // effect: 'coverflow',
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  // coverflowEffect: {
+  //   rotate: 50,
+  //   stretch: 0,
+  //   depth: 100,
+  //   modifier: 1,
+  //   slideShadows : true,
+  // },
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+});
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(41)
+var __vue_script__ = __webpack_require__(68)
 /* template */
-var __vue_template__ = __webpack_require__(42)
+var __vue_template__ = __webpack_require__(69)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47318,7 +47435,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/Intro.vue"
+Component.options.__file = "resources/js/components/landing/Intro.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47327,9 +47444,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0648c911", Component.options)
+    hotAPI.createRecord("data-v-28944bce", Component.options)
   } else {
-    hotAPI.reload("data-v-0648c911", Component.options)
+    hotAPI.reload("data-v-28944bce", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47340,7 +47457,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 41 */
+/* 68 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47380,7 +47497,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 42 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47434,20 +47551,20 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0648c911", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-28944bce", module.exports)
   }
 }
 
 /***/ }),
-/* 43 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(44)
+var __vue_script__ = __webpack_require__(71)
 /* template */
-var __vue_template__ = __webpack_require__(45)
+var __vue_template__ = __webpack_require__(72)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47464,7 +47581,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/Library.vue"
+Component.options.__file = "resources/js/components/landing/Library.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47473,9 +47590,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-99b30ec0", Component.options)
+    hotAPI.createRecord("data-v-1cd930b0", Component.options)
   } else {
-    hotAPI.reload("data-v-99b30ec0", Component.options)
+    hotAPI.reload("data-v-1cd930b0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47486,7 +47603,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 44 */
+/* 71 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47516,7 +47633,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 45 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47552,20 +47669,20 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-99b30ec0", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-1cd930b0", module.exports)
   }
 }
 
 /***/ }),
-/* 46 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(47)
+var __vue_script__ = __webpack_require__(74)
 /* template */
-var __vue_template__ = __webpack_require__(48)
+var __vue_template__ = __webpack_require__(75)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47582,7 +47699,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/Pitch.vue"
+Component.options.__file = "resources/js/components/landing/Pitch.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47591,9 +47708,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-1a72c836", Component.options)
+    hotAPI.createRecord("data-v-4f98a626", Component.options)
   } else {
-    hotAPI.reload("data-v-1a72c836", Component.options)
+    hotAPI.reload("data-v-4f98a626", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47604,7 +47721,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 47 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47648,7 +47765,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 48 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47718,20 +47835,20 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-1a72c836", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-4f98a626", module.exports)
   }
 }
 
 /***/ }),
-/* 49 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(50)
+var __vue_script__ = __webpack_require__(77)
 /* template */
-var __vue_template__ = __webpack_require__(51)
+var __vue_template__ = __webpack_require__(78)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47748,7 +47865,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/SaidAboutFilter.vue"
+Component.options.__file = "resources/js/components/landing/SaidAboutFilter.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47757,9 +47874,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-ed2bcfbe", Component.options)
+    hotAPI.createRecord("data-v-219b7f29", Component.options)
   } else {
-    hotAPI.reload("data-v-ed2bcfbe", Component.options)
+    hotAPI.reload("data-v-219b7f29", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47770,7 +47887,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 50 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47794,7 +47911,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 51 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47815,20 +47932,20 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-ed2bcfbe", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-219b7f29", module.exports)
   }
 }
 
 /***/ }),
-/* 52 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(53)
+var __vue_script__ = __webpack_require__(80)
 /* template */
-var __vue_template__ = __webpack_require__(54)
+var __vue_template__ = __webpack_require__(81)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47845,7 +47962,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/Subscription.vue"
+Component.options.__file = "resources/js/components/landing/Subscription.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -47854,9 +47971,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-4c0df688", Component.options)
+    hotAPI.createRecord("data-v-15052c80", Component.options)
   } else {
-    hotAPI.reload("data-v-4c0df688", Component.options)
+    hotAPI.reload("data-v-15052c80", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -47867,11 +47984,16 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 53 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
 //
 //
 //
@@ -47995,7 +48117,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 54 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -48016,7 +48138,7 @@ var staticRenderFns = [
         _vm._v("Vad passar dig?")
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "subtype-wrapper" }, [
+      _c("div", { staticClass: "outer-subtype-wrapper" }, [
         _c(
           "div",
           {
@@ -48024,13 +48146,97 @@ var staticRenderFns = [
               "subtype-container extra-top-margin subtype-desktop-left"
           },
           [
+            _c("div", { staticClass: "inner-subtype-wrapper" }, [
+              _c("div", { staticClass: "subtype-header" }, [
+                _c("h2", { staticClass: "subtype-title" }, [_vm._v("Webb")]),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "tablet",
+                  attrs: { src: "/images/tablet.svg", alt: "tablet" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "subtype-content" }, [
+                _c("div", { staticClass: "check" }, [
+                  _c("img", {
+                    attrs: { src: "/images/check.svg", alt: "check" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Full tillgång till över 500 artiklar på Filters webbplats"
+                  )
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "subtype-content" }, [
+                _c("div", { staticClass: "check" }, [
+                  _c("img", {
+                    attrs: { src: "/images/check.svg", alt: "check" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("Diskutera artiklar med läsare och skribenter")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "subtype-content" }, [
+                _c("div", { staticClass: "check" }, [
+                  _c("img", {
+                    attrs: { src: "/images/check.svg", alt: "check" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Lyssna eller läs - välj själv")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "subtype-content" }, [
+                _c("div", { staticClass: "check" }, [
+                  _c("img", {
+                    attrs: { src: "/images/check.svg", alt: "check" }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Säg upp när du vill")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "select" }, [
+              _c("div", { staticClass: "select-button" }, [
+                _c("h4", [_vm._v("Välj")])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "price" }, [
+                _c("h3", [
+                  _c("span", { staticClass: "digit" }, [_vm._v("19")]),
+                  _vm._v(" kr / mån")
+                ])
+              ])
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "subtype-container subtype-desktop-right" }, [
+          _c("div", { staticClass: "inner-subtype-wrapper" }, [
             _c("div", { staticClass: "subtype-header" }, [
-              _c("h2", { staticClass: "subtype-title" }, [_vm._v("Webb")]),
+              _c("h2", { staticClass: "subtype-title" }, [_vm._v("Magasin")]),
               _vm._v(" "),
               _c("img", {
-                staticClass: "tablet",
-                attrs: { src: "/images/tablet.svg", alt: "tablet" }
+                staticClass: "newspaper",
+                attrs: { src: "/images/newspaper.svg", alt: "paper" }
               })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "subtype-content" }, [
+              _c("div", { staticClass: "check" }, [
+                _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("Magasinet Filter hem i din brevlåda varannan månad")
+              ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "subtype-content" }, [
@@ -48076,79 +48282,9 @@ var staticRenderFns = [
               _vm._v(" "),
               _c("div", { staticClass: "price" }, [
                 _c("h3", [
-                  _c("span", { staticClass: "digit" }, [_vm._v("19")]),
+                  _c("span", { staticClass: "digit" }, [_vm._v("39")]),
                   _vm._v(" kr / mån")
                 ])
-              ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "subtype-container" }, [
-          _c("div", { staticClass: "subtype-header" }, [
-            _c("h2", { staticClass: "subtype-title" }, [_vm._v("Magasin")]),
-            _vm._v(" "),
-            _c("img", {
-              staticClass: "newspaper",
-              attrs: { src: "/images/newspaper.svg", alt: "tablet" }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "subtype-content" }, [
-            _c("div", { staticClass: "check" }, [
-              _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("Magasinet Filter hem i din brevlåda varannan månad")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "subtype-content" }, [
-            _c("div", { staticClass: "check" }, [
-              _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Full tillgång till över 500 artiklar på Filters webbplats"
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "subtype-content" }, [
-            _c("div", { staticClass: "check" }, [
-              _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("Diskutera artiklar med läsare och skribenter")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "subtype-content" }, [
-            _c("div", { staticClass: "check" }, [
-              _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("Lyssna eller läs - välj själv")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "subtype-content" }, [
-            _c("div", { staticClass: "check" }, [
-              _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
-            ]),
-            _vm._v(" "),
-            _c("p", [_vm._v("Säg upp när du vill")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "select" }, [
-            _c("div", { staticClass: "select-button" }, [
-              _c("h4", [_vm._v("Välj")])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "price" }, [
-              _c("h3", [
-                _c("span", { staticClass: "digit" }, [_vm._v("39")]),
-                _vm._v(" kr / mån")
               ])
             ])
           ])
@@ -48162,20 +48298,20 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-4c0df688", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-15052c80", module.exports)
   }
 }
 
 /***/ }),
-/* 55 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(56)
+var __vue_script__ = __webpack_require__(83)
 /* template */
-var __vue_template__ = __webpack_require__(57)
+var __vue_template__ = __webpack_require__(84)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -48192,7 +48328,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/TryFilter.vue"
+Component.options.__file = "resources/js/components/landing/TryFilter.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -48201,9 +48337,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-288de9b8", Component.options)
+    hotAPI.createRecord("data-v-7f7b36c0", Component.options)
   } else {
-    hotAPI.reload("data-v-288de9b8", Component.options)
+    hotAPI.reload("data-v-7f7b36c0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48214,7 +48350,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 56 */
+/* 83 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48266,7 +48402,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 57 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -48368,20 +48504,20 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-288de9b8", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-7f7b36c0", module.exports)
   }
 }
 
 /***/ }),
-/* 58 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(59)
+var __vue_script__ = __webpack_require__(86)
 /* template */
-var __vue_template__ = __webpack_require__(60)
+var __vue_template__ = __webpack_require__(87)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -48398,7 +48534,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/js/components/Swiper.vue"
+Component.options.__file = "resources/js/components/landing/Swiper.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -48407,9 +48543,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-d3ab4aba", Component.options)
+    hotAPI.createRecord("data-v-5e5f6a9b", Component.options)
   } else {
-    hotAPI.reload("data-v-d3ab4aba", Component.options)
+    hotAPI.reload("data-v-5e5f6a9b", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -48420,7 +48556,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 59 */
+/* 86 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48503,7 +48639,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 60 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -48607,88 +48743,422 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-d3ab4aba", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-5e5f6a9b", module.exports)
   }
 }
 
 /***/ }),
-/* 61 */
-/***/ (function(module, exports) {
+/* 88 */
+/***/ (function(module, exports, __webpack_require__) {
 
-// var mySwiper = new Swiper ('.swiper-container', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(89)
+/* template */
+var __vue_template__ = __webpack_require__(90)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/tryItOut/TryItOut.vue"
 
-//     // If we need pagination
-//     pagination: {
-//     el: '.swiper-pagination',
-//     dynamicBullets: true,
-//     },
-
-//     // Navigation arrows
-//     navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//     },
-
-//     // And if we need scrollbar
-// //   scrollbar: {
-// //     el: '.swiper-scrollbar',
-// //   },
-// })
-
-var swiperMobile = new Swiper('.swiper-container.mobile', {
-  effect: 'coverflow',
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-90cd5fd8", Component.options)
+  } else {
+    hotAPI.reload("data-v-90cd5fd8", Component.options)
   }
-});
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
 
-var swiperDesktop = new Swiper('.swiper-container.desktop', {
-  // effect: 'coverflow',
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  // coverflowEffect: {
-  //   rotate: 50,
-  //   stretch: 0,
-  //   depth: 100,
-  //   modifier: 1,
-  //   slideShadows : true,
-  // },
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
+module.exports = Component.exports
+
+
+/***/ }),
+/* 89 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    mounted: function mounted() {
+        console.log('TryItOut component mounted.');
+    }
 });
 
 /***/ }),
-/* 62 */
-/***/ (function(module, exports) {
+/* 90 */
+/***/ (function(module, exports, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "tryItOut-container" }, [
+      _c("div", { staticClass: "gradient-left" }),
+      _vm._v(" "),
+      _c("h2", { staticClass: "tryItOut-title" }, [
+        _vm._v("Testa en månad gratis!")
+      ]),
+      _vm._v(" "),
+      _c("h3", { staticClass: "tryItOut-subtitle" }, [
+        _vm._v("Välj den prenumeration du vill testa.")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "spread-sheet" }, [
+        _c("div", { staticClass: "row no-border" }, [
+          _c("div", { staticClass: "column web" }, [
+            _c("img", {
+              staticClass: "spread-sheet-tablet",
+              attrs: { src: "/images/tablet.svg", alt: "tablet" }
+            }),
+            _vm._v(" "),
+            _c("h2", { staticClass: "column-title" }, [_vm._v("Webb")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column magazine" }, [
+            _c("img", {
+              staticClass: "spread-sheet-newspaper",
+              attrs: { src: "/images/newspaper.svg", alt: "paper" }
+            }),
+            _vm._v(" "),
+            _c("h2", { staticClass: "column-title" }, [_vm._v("Magasin")])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "center-text" }, [
+            _vm._v("FÖRSTA MÅNADEN GRATIS, DÄREFTER:")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "column web" }, [
+            _c("h3", [
+              _c("span", { staticClass: "spread-sheet-digit" }, [_vm._v("19")]),
+              _vm._v(" kr / mån")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column magazine" }, [
+            _c("h3", [
+              _c("span", { staticClass: "spread-sheet-digit" }, [_vm._v("39")]),
+              _vm._v(" kr / mån")
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("p", { staticClass: "center-text mailbox" }, [
+            _vm._v("MAGASINET HEM I BREVLÅDAN")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column web spread-extra-top-padding" }, [
+            _c("img", {
+              staticClass: "spread-cross",
+              attrs: { src: "/images/cross.svg", alt: "kryss" }
+            })
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "column magazine spread-extra-top-padding" },
+            [
+              _c("img", {
+                staticClass: "spread-check",
+                attrs: { src: "/images/check.svg", alt: "check" }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("p", { staticClass: "center-text web-access" }, [
+            _vm._v("ALLA ARTIKLAR I FILTERS WEBB-BIBLIOTEK")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column web spread-extra-top-padding" }, [
+            _c("img", {
+              staticClass: "spread-check",
+              attrs: { src: "/images/check.svg", alt: "check" }
+            })
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "column magazine spread-extra-top-padding" },
+            [
+              _c("img", {
+                staticClass: "spread-check",
+                attrs: { src: "/images/check.svg", alt: "check" }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("p", { staticClass: "center-text digital-form" }, [
+            _vm._v("PAPPERSTIDNINGEN I DIGITAL FORM")
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column web spread-extra-top-padding" }, [
+            _c("img", {
+              staticClass: "spread-check",
+              attrs: { src: "/images/check.svg", alt: "check" }
+            })
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "column magazine spread-extra-top-padding" },
+            [
+              _c("img", {
+                staticClass: "spread-check",
+                attrs: { src: "/images/check.svg", alt: "check" }
+              })
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "spread-select-button border-right" }, [
+            _c("h4", [_vm._v("Välj")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "spread-select-button border-left" }, [
+            _c("h4", [_vm._v("Välj")])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "always-container" }, [
+        _c("div", { staticClass: "gradient-left" }),
+        _vm._v(" "),
+        _c("h2", { staticClass: "always-title" }, [
+          _vm._v("ALLTID SOM FILTERMEDLEM:")
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "always-content" }, [
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("Grävande och trovärdig kvalitéts-journalistik")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "always-content" }, [
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("Fortsätt läs där du slutade senast")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "always-content" }, [
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("Bokmärk artiklar för framtida läsning")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "always-content" }, [
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Välj själv om du vill få texten uppläst för dig eller läsa själv"
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "always-content" }, [
+          _c("div", { staticClass: "check" }, [
+            _c("img", { attrs: { src: "/images/check.svg", alt: "check" } })
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v("Diskutera artiklar med andra läsare och skribenter")
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-90cd5fd8", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

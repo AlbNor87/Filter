@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div id="app">
+    <div id="app" class="page-container">
         <intro></intro>
         <library></library>
         <pitch></pitch>

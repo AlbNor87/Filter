@@ -31,10 +31,18 @@
     }
 }
 
-.subtype-wrapper {
+.outer-subtype-wrapper {
     @include bp(medium) {
         margin-top: 36px;
         display: flex;
+    }
+}
+
+.inner-subtype-wrapper {
+    @include bp(medium) {
+        display: flex;
+        flex-direction: column;
+        // margin-top: 24px;
     }
 }
 
@@ -43,12 +51,24 @@
     width: 100%;
     background-color: $FilterGrey;
     padding: 16px 16px 10px 16px;
+    @include bp(medium) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
 }
 
 .subtype-desktop-left {
     @include bp(medium) {
-    padding: 16px 16px 10px 48px;
+    padding: 24px 24px 24px 48px;
     margin-right: 16px;
+    } 
+}
+
+.subtype-desktop-right {
+    @include bp(medium) {
+    padding: 24px 48px 24px 24px;
     } 
 }
 
@@ -62,19 +82,28 @@
 .subtype-header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 24px;
 }
 
 .subtype-title {
     color: $FilterWhite;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 300;
     line-height: 35px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
+    @include bp(medium) {
+        font-size: 48px;
+        margin-bottom: 0px;
+        padding-top: 16px;
+    }
 }
 
 .subtype-content {
     display: flex;
     margin: 11px 0px 10px 0px;
+    @include bp(medium) {
+        margin: 0px 0px 16px 0px;
+    } 
     p {
         flex: 1;
         font-family: 'Harriet Text';
@@ -82,23 +111,41 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 22px;
+        @include bp(medium) {
+            font-size: 24px;   
+            max-width: 462px;
+            line-height: 33px;
+        } 
     }
 }
 
 .tablet {
     width: 35.35px;
     height: 40.4px;
+    @include bp(medium) {
+        width: 70px;
+        height: 80px;
+    } 
 }
 
 .newspaper {
     width: 44px;
     height: 29px;
+    @include bp(medium) {
+        width: 80px;
+        height: 52px;
+    } 
 }
 
 .check {
     margin: 2px 10px 0px 0px;
     width: 16px;
     height: 12px;
+    @include bp(medium) {
+        margin: 7px 10px 0px 0px;
+        width: 21px;
+        height: 16px; 
+    } 
 }
 
 .select {
@@ -107,7 +154,6 @@
     justify-content: space-between;
     padding: 5px 0px 0px 0px;
     text-align: center;
-
 }
 
 .price {
@@ -120,11 +166,19 @@
     h3 {
         font-weight: 300;
         font-size: 18px;
+        @include bp(medium) {
+            font-size: 32px;
+    
+        }
     }
 }
 
 .digit {
     font-size: 55px;
+    @include bp(medium) {
+        font-size: 80px;
+
+    }
 }
 
 .select-button {
@@ -141,4 +195,13 @@
         text-transform: uppercase;
         font-size: 24px;
     }
+    @include bp(medium) {
+        margin: 7px 10px 0px 0px;
+        width: 284px;
+        height: 56px;
+        h4 {
+            font-size: 32px;
+        } 
+    } 
 }
+

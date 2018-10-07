@@ -2,6 +2,10 @@
     width: 100%;
     padding: 18px;
     background-color: $FilterBlack;
+    @include bp(medium) {
+        padding: 48px;
+        padding-top: 120px;
+    }
 }
 
 .tryFilter-title {
@@ -16,6 +20,10 @@
     line-height: 27px;
     align-self: flex-start;
     letter-spacing: 1px;
+    @include bp(medium) {
+        font-size: 32px;
+        line-height: 44px;
+    }
 }
 
 .tryFilter-header {
@@ -25,12 +33,20 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 22px;
+        @include bp(medium) {
+            margin-top: 16px;
+            font-size: 24px;
+            width: 577px;
+            line-height: 33px;
+        }
     }
+    
 }
 
 .article-container {
     @include bp(medium) {
         display: flex;
+        padding-bottom: 160px;
     } 
 }
 
@@ -38,11 +54,17 @@
     margin-top: 28px;
     @include bp(medium) {
         flex: 1;
+        margin-top: 40px;
     } 
     img {
         width: 339px;
         height: 180px;
         margin-bottom: 15px;
+        @include bp(medium) {
+            width: 384px;
+            height: 204px;
+            margin-right: 16px;
+        } 
     }
 
     h2 {
@@ -50,6 +72,10 @@
         font-weight: 300;
         line-height: 26px;
         margin-bottom: 4px;
+        @include bp(medium) {
+            font-size: 24px;   
+            max-width: 384px;
+        } 
     }
 
     p {
@@ -59,6 +85,9 @@
         font-weight: 500;
         line-height: 22px;
         margin-bottom: 8px;
+        @include bp(medium) {
+            max-width: 384px;
+        } 
     }
 
     .author {

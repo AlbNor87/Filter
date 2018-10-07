@@ -22,10 +22,14 @@
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
-#app {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+.page-container {
+    @include bp(medium) {
+        margin-top: 74px;   
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
 
 .desktop {

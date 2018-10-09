@@ -1,0 +1,111 @@
+.card-form-container {
+    width: 100%;
+    padding: 18px;
+    input[type=text] {
+        margin-bottom: 8px;
+        width: 100%;
+        height: 48px;
+        padding: 4px 15px 4px 40px;
+        box-sizing: border-box;
+        border: none;
+        color: $FilterGreyLight;
+        background-color: $FilterGreyDark;
+        font-family: 'PF Din';
+        font-weight: 400;
+        font-size: 18px;
+        @include bp(medium) {
+            height: 56px;
+        } 
+        &:focus {
+            background-color: $FilterGreyLight;
+            color: $FilterGreyDark;
+            outline: none;
+        }
+        &.active {
+            padding: 4px 15px;
+        }
+        
+    }
+    p {
+        font-size: 12px;
+        font-family: 'Harriet Text';
+        font-weight: 500;
+        line-height: 18px;
+        color: $FilterGreyLight;
+        margin-bottom: 16px;
+    }
+
+}
+
+.position-relative {
+    position: relative;
+}
+
+.card-input {
+    padding-left: 30px; 
+}
+
+.card-input.active {
+    padding-left: 30px; 
+}
+
+.card-input-img {
+    position: absolute;
+    top: 36px;
+    left: 32px;
+    width: 16px;
+    height: 12px;
+}
+
+.card-image-container {
+    width: 100%;
+}
+
+.card-img {
+    width: 49px;
+    height: 32px;
+    margin-right: 6px;
+}
+
+.time-span {
+    @extend .tryItOut-subtitle;
+    padding: 0;
+    margin-top: 32px;
+}
+
+.no-magazine-container {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    height: 72px;
+    background-color: $FilterGreyDark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 35px;
+        height: 40px;
+        margin-left: 21px;
+    }
+}
+
+.no-magazine-content {
+    display: flex;
+    flex-direction: column;
+    h3 {
+        font-family: 'PF Din';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        color: $FilterPink;
+    }
+    p {
+        font-size: 12px;
+        font-family: 'Harriet Text';
+        font-weight: 500;
+        line-height: 18px;
+        color: $FilterGreyLight;
+        margin-bottom: 0px;
+        margin-top: 4px;
+    }
+}

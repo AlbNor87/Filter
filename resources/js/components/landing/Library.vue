@@ -4,9 +4,9 @@
         <div class="library">
             <div class="library-gradient"></div>
 
-            <div class="testa-mobile">
+            <a href="/testa/steg1" class="testa-mobile no-decor">
                 <h3>Testa en månad gratis</h3>
-            </div>
+            </a>
             
             <h2 class="subtitle">Över 500 artiklar <br> samlat i ett bibliotek</h2>
         </div>

@@ -11,9 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-Route::get('/testa', function () {
-    return view('tryItOut');
-});
+Route::view('/', 'index');
+Route::view('/testa/steg1', 'tryItOut');
+Route::view('/testa/steg2', 'tryItOut2');
+Route::view('/testa/steg3', 'tryItOut3');
+Route::view('/registrerad', 'tryItOut4');
+
+// Route::get('/testa', function () {
+//     return view('tryItOut');
+// });
+
+// Route::get('/testa/steg2', function () {
+//     return view('tryItOut2');
+// });

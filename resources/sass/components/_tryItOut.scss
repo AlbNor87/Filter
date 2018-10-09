@@ -3,13 +3,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 53px;
+    padding-top: 57px;
     background-color: $FilterBlack;
 }
 
 .tryItOut-title {
     position: absolute;
-    top: 30px;
+    top: 34px;
     padding-left: 18px;
     color: $FilterWhite;
     font-size: 32px;
@@ -26,10 +26,15 @@
 .tryItOut-subtitle {
     margin-top: 18px;
     padding-left: 18px;
+    padding-right: 18px;
     font-family: 'Harriet Text';
     color: $FilterGreyLight;
     font-size: 16px;
     font-weight: 500;
+    line-height: 22px;
+    @include bp(medium) {
+        margin-left: 48px;
+    }
 }
 
 
@@ -129,7 +134,7 @@
 }
 
 .mailbox {
-    top: 201px;   
+    top: 202px;   
 }
 
 .web-access {
@@ -159,14 +164,6 @@
         text-transform: uppercase;
         font-size: 24px;
     }
-    // @include bp(medium) {
-    //     margin: 7px 10px 0px 0px;
-    //     width: 284px;
-    //     height: 56px;
-    //     h4 {
-    //         font-size: 32px;
-    //     } 
-    // } 
 }
 
 .border-right {
@@ -186,6 +183,10 @@
     padding: 18px;
     padding-top: 72px;
     background-color: $FilterBlack;
+    @include bp(medium) {
+        // margin-top: 24px;
+        padding-left: 48px;
+    }
 }
 
 .always-title {
@@ -210,7 +211,6 @@
 
 .always-content {
     display: flex;
-
     margin-bottom: 18px;
     @include bp(medium) {
         margin: 0px 0px 16px 0px;
@@ -228,4 +228,8 @@
             line-height: 33px;
         } 
     }
+}
+
+.tryItOut-gradient-top {
+    top: 4px;
 }

@@ -13988,7 +13988,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-module.exports = __webpack_require__(62);
+module.exports = __webpack_require__(74);
 
 
 /***/ }),
@@ -14003,35 +14003,28 @@ window.Vue = __webpack_require__(37);
 // import 'swiper/dist/swiper.css';
 // Vue.use(Swiper);
 
-
 //Landing page
-Vue.component('intro', __webpack_require__(67));
-Vue.component('library', __webpack_require__(70));
-Vue.component('pitch', __webpack_require__(73));
-Vue.component('saidaboutfilter', __webpack_require__(76));
-Vue.component('subscription', __webpack_require__(79));
-Vue.component('tryfilter', __webpack_require__(82));
-Vue.component('swiper', __webpack_require__(85));
+Vue.component('intro', __webpack_require__(40));
+Vue.component('library', __webpack_require__(43));
+Vue.component('pitch', __webpack_require__(46));
+Vue.component('saidaboutfilter', __webpack_require__(49));
+Vue.component('subscription', __webpack_require__(52));
+Vue.component('tryfilter', __webpack_require__(55));
+Vue.component('swiper', __webpack_require__(58));
+Vue.component('tryitout', __webpack_require__(61));
+Vue.component('tryitout2', __webpack_require__(64));
+Vue.component('tryitout3', __webpack_require__(67));
+Vue.component('tryitout4', __webpack_require__(70));
 
-if (window.location.pathname === '/') {
-    var app = new Vue({
-        el: '#app'
-    });
+var app = new Vue({
+    el: '#app'
+});
 
+if (document.querySelector('.swiper-container')) {
     var swiper = new Vue({
         el: '#swiper'
     });
-}
-
-__webpack_require__(61);
-
-//Try It Out page
-Vue.component('tryitout', __webpack_require__(88));
-
-if (window.location.pathname === '/testa') {
-    var testa = new Vue({
-        el: '#testa'
-    });
+    __webpack_require__(73);
 }
 
 /***/ }),
@@ -47306,119 +47299,15 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(7)))
 
 /***/ }),
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */,
-/* 61 */
-/***/ (function(module, exports) {
-
-// var mySwiper = new Swiper ('.swiper-container', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
-
-//     // If we need pagination
-//     pagination: {
-//     el: '.swiper-pagination',
-//     dynamicBullets: true,
-//     },
-
-//     // Navigation arrows
-//     navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//     },
-
-//     // And if we need scrollbar
-// //   scrollbar: {
-// //     el: '.swiper-scrollbar',
-// //   },
-// })
-
-var swiperMobile = new Swiper('.swiper-container.mobile', {
-  effect: 'coverflow',
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-});
-
-var swiperDesktop = new Swiper('.swiper-container.desktop', {
-  // effect: 'coverflow',
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  // coverflowEffect: {
-  //   rotate: 50,
-  //   stretch: 0,
-  //   depth: 100,
-  //   modifier: 1,
-  //   slideShadows : true,
-  // },
-  pagination: {
-    el: '.swiper-pagination',
-    dynamicBullets: true
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-});
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 63 */,
-/* 64 */,
-/* 65 */,
-/* 66 */,
-/* 67 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(68)
+var __vue_script__ = __webpack_require__(41)
 /* template */
-var __vue_template__ = __webpack_require__(69)
+var __vue_template__ = __webpack_require__(42)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47457,7 +47346,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 68 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47497,7 +47386,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 69 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47512,13 +47401,20 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "intro-container" }, [
-      _c("div", { staticClass: "magazine-container desktop" }, [
-        _c("div", { staticClass: "magazine-1" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "magazine-2" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "magazine-3" })
-      ]),
+      _c(
+        "a",
+        {
+          staticClass: "magazine-container desktop",
+          attrs: { href: "/testa/steg1" }
+        },
+        [
+          _c("div", { staticClass: "magazine-1" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "magazine-2" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "magazine-3" })
+        ]
+      ),
       _vm._v(" "),
       _c("div", { staticClass: "intro-content" }, [
         _c("h1", { staticClass: "title" }, [
@@ -47531,18 +47427,30 @@ var staticRenderFns = [
           )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "testa-desktop" }, [
-          _c("h3", [_vm._v("Testa en månad gratis")])
-        ])
+        _c(
+          "a",
+          {
+            staticClass: "testa-desktop no-decor",
+            attrs: { href: "/testa/steg1" }
+          },
+          [_c("h3", [_vm._v("Testa en månad gratis")])]
+        )
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "magazine-container mobile" }, [
-        _c("div", { staticClass: "magazine-1" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "magazine-2" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "magazine-3" })
-      ])
+      _c(
+        "a",
+        {
+          staticClass: "magazine-container mobile",
+          attrs: { href: "/testa/steg1" }
+        },
+        [
+          _c("div", { staticClass: "magazine-1" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "magazine-2" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "magazine-3" })
+        ]
+      )
     ])
   }
 ]
@@ -47556,15 +47464,15 @@ if (false) {
 }
 
 /***/ }),
-/* 70 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(71)
+var __vue_script__ = __webpack_require__(44)
 /* template */
-var __vue_template__ = __webpack_require__(72)
+var __vue_template__ = __webpack_require__(45)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47603,7 +47511,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 71 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47633,7 +47541,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 72 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47651,9 +47559,14 @@ var staticRenderFns = [
       _c("div", { staticClass: "library" }, [
         _c("div", { staticClass: "library-gradient" }),
         _vm._v(" "),
-        _c("div", { staticClass: "testa-mobile" }, [
-          _c("h3", [_vm._v("Testa en månad gratis")])
-        ]),
+        _c(
+          "a",
+          {
+            staticClass: "testa-mobile no-decor",
+            attrs: { href: "/testa/steg1" }
+          },
+          [_c("h3", [_vm._v("Testa en månad gratis")])]
+        ),
         _vm._v(" "),
         _c("h2", { staticClass: "subtitle" }, [
           _vm._v("Över 500 artiklar "),
@@ -47674,15 +47587,15 @@ if (false) {
 }
 
 /***/ }),
-/* 73 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(74)
+var __vue_script__ = __webpack_require__(47)
 /* template */
-var __vue_template__ = __webpack_require__(75)
+var __vue_template__ = __webpack_require__(48)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47721,7 +47634,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 74 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47765,7 +47678,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 75 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47840,15 +47753,15 @@ if (false) {
 }
 
 /***/ }),
-/* 76 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(77)
+var __vue_script__ = __webpack_require__(50)
 /* template */
-var __vue_template__ = __webpack_require__(78)
+var __vue_template__ = __webpack_require__(51)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47887,7 +47800,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 77 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47911,7 +47824,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 78 */
+/* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47937,15 +47850,15 @@ if (false) {
 }
 
 /***/ }),
-/* 79 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(80)
+var __vue_script__ = __webpack_require__(53)
 /* template */
-var __vue_template__ = __webpack_require__(81)
+var __vue_template__ = __webpack_require__(54)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -47984,7 +47897,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 80 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48117,7 +48030,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 81 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -48204,9 +48117,14 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "select" }, [
-              _c("div", { staticClass: "select-button" }, [
-                _c("h4", [_vm._v("Välj")])
-              ]),
+              _c(
+                "a",
+                {
+                  staticClass: "select-button no-decor",
+                  attrs: { href: "/testa/steg1" }
+                },
+                [_c("h4", [_vm._v("Välj")])]
+              ),
               _vm._v(" "),
               _c("div", { staticClass: "price" }, [
                 _c("h3", [
@@ -48276,9 +48194,14 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "select" }, [
-              _c("div", { staticClass: "select-button" }, [
-                _c("h4", [_vm._v("Välj")])
-              ]),
+              _c(
+                "a",
+                {
+                  staticClass: "select-button no-decor",
+                  attrs: { href: "/testa/steg1" }
+                },
+                [_c("h4", [_vm._v("Välj")])]
+              ),
               _vm._v(" "),
               _c("div", { staticClass: "price" }, [
                 _c("h3", [
@@ -48303,15 +48226,15 @@ if (false) {
 }
 
 /***/ }),
-/* 82 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(83)
+var __vue_script__ = __webpack_require__(56)
 /* template */
-var __vue_template__ = __webpack_require__(84)
+var __vue_template__ = __webpack_require__(57)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -48350,7 +48273,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 83 */
+/* 56 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48402,7 +48325,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 84 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -48509,15 +48432,15 @@ if (false) {
 }
 
 /***/ }),
-/* 85 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(86)
+var __vue_script__ = __webpack_require__(59)
 /* template */
-var __vue_template__ = __webpack_require__(87)
+var __vue_template__ = __webpack_require__(60)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -48556,11 +48479,17 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 86 */
+/* 59 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -48639,7 +48568,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 87 */
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -48657,32 +48586,38 @@ var staticRenderFns = [
       _c("div", { staticClass: "swiper-container mobile" }, [
         _c("div", { staticClass: "swiper-wrapper" }, [
           _c("div", { staticClass: "swiper-slide slide" }, [
-            _c("p", [
-              _vm._v(
-                "“Jag pratar ofta med folk i min omgivning om sådant jag läst i Filter”"
-              )
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "quoted" }, [_vm._v("Olle D - Läsare")])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "swiper-slide slide" }, [
-            _c("p", [
-              _vm._v("“Jag använder ofta Filter när jag brygger kaffe!”")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "quoted" }, [
-              _vm._v("Hannibal Lecter - Psykopat")
+            _c("div", { staticClass: "mobile-slide" }, [
+              _c("p", [
+                _vm._v(
+                  "“Jag pratar ofta med folk i min omgivning om sådant jag läst i Filter”"
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "quoted" }, [_vm._v("Olle D - Läsare")])
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "swiper-slide slide" }, [
-            _c("p", [
-              _vm._v("“Jag använder nästan alltid Filter på instagram!”")
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "quoted" }, [
-              _vm._v("Sauron - Mörkrets Härskare")
+            _c("div", { staticClass: "mobile-slide" }, [
+              _c("p", [
+                _vm._v("“Jag använder ofta Filter när jag brygger kaffe!”")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "quoted" }, [
+                _vm._v("Hannibal Lecter - Psykopat")
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "swiper-slide slide" }, [
+            _c("div", { staticClass: "mobile-slide" }, [
+              _c("p", [
+                _vm._v("“Jag använder nästan alltid Filter på instagram!”")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "quoted" }, [
+                _vm._v("Sauron - Mörkrets Härskare")
+              ])
             ])
           ])
         ]),
@@ -48748,15 +48683,15 @@ if (false) {
 }
 
 /***/ }),
-/* 88 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(1)
 /* script */
-var __vue_script__ = __webpack_require__(89)
+var __vue_script__ = __webpack_require__(62)
 /* template */
-var __vue_template__ = __webpack_require__(90)
+var __vue_template__ = __webpack_require__(63)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -48795,13 +48730,11 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 89 */
+/* 62 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
 //
 //
 //
@@ -48946,7 +48879,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 90 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -48961,7 +48894,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "tryItOut-container" }, [
-      _c("div", { staticClass: "gradient-left" }),
+      _c("div", { staticClass: "gradient-left tryItOut-gradient-top" }),
       _vm._v(" "),
       _c("h2", { staticClass: "tryItOut-title" }, [
         _vm._v("Testa en månad gratis!")
@@ -49085,13 +49018,23 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "spread-select-button border-right" }, [
-            _c("h4", [_vm._v("Välj")])
-          ]),
+          _c(
+            "a",
+            {
+              staticClass: "spread-select-button border-right no-decor",
+              attrs: { href: "/testa/steg2" }
+            },
+            [_c("h4", [_vm._v("Välj")])]
+          ),
           _vm._v(" "),
-          _c("div", { staticClass: "spread-select-button border-left" }, [
-            _c("h4", [_vm._v("Välj")])
-          ])
+          _c(
+            "a",
+            {
+              staticClass: "spread-select-button border-left no-decor",
+              attrs: { href: "/testa/steg2" }
+            },
+            [_c("h4", [_vm._v("Välj")])]
+          )
         ])
       ]),
       _vm._v(" "),
@@ -49159,6 +49102,770 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-90cd5fd8", module.exports)
   }
 }
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(65)
+/* template */
+var __vue_template__ = __webpack_require__(66)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/tryItOut/TryItOut2.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3ba85bce", Component.options)
+  } else {
+    hotAPI.reload("data-v-3ba85bce", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    mounted: function mounted() {
+        console.log('TryItOut2 component mounted.');
+    }
+});
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "tryItOut-container" }, [
+      _c("div", { staticClass: "gradient-left tryItOut-gradient-top" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "tryItOut-title-container" }, [
+        _c("div", { staticClass: "title-wrapper" }, [
+          _c("img", {
+            staticClass: "tryItOut-title-img",
+            attrs: { src: "/images/newspaper.svg", alt: "paper" }
+          }),
+          _vm._v(" "),
+          _c("h2", [_vm._v("Magasin")])
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "no-decor", attrs: { href: "/testa/steg1" } }, [
+          _c("h3", [_vm._v("Tillbaka")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { staticClass: "tryItOut-subtitle tm-24" }, [
+        _vm._v(
+          "Prenumerationen inkluderar tillgång till både webbarkivet och magasinet. Registrera ditt inlogg och ange den adress som du vill ha tidningen levererad till."
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "form",
+        { staticClass: "form-container", attrs: { action: "/testa/steg3" } },
+        [
+          _c("input", {
+            attrs: { type: "text", placeholder: "Förnamn", required: "" }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: { type: "text", placeholder: "Efternamn", required: "" }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: { type: "text", placeholder: "Email", required: "" }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: { type: "password", placeholder: "Lösenord", required: "" }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: {
+              type: "password",
+              placeholder: "Upprepea lösenord",
+              required: ""
+            }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: { type: "text", placeholder: "Adress", required: "" }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: { type: "number", placeholder: "Postnummer", required: "" }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: { type: "text", placeholder: "Postort", required: "" }
+          }),
+          _vm._v(" "),
+          _c("input", {
+            attrs: { type: "text", placeholder: "Land", required: "" }
+          }),
+          _vm._v(" "),
+          _c("label", { staticClass: "checkbox-container" }, [
+            _c("input", { attrs: { type: "checkbox" } }),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "Jag har läst och godkänner hanteringen av mina personuppgifter. "
+              ),
+              _c("a", { staticClass: "pf-din", attrs: { href: "" } }, [
+                _vm._v("Läs här.")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "checkmark" })
+          ]),
+          _vm._v(" "),
+          _c("input", {
+            staticClass: "submit submit-registeration",
+            attrs: { type: "submit", value: "Nästa steg" }
+          })
+        ]
+      )
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3ba85bce", module.exports)
+  }
+}
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(68)
+/* template */
+var __vue_template__ = __webpack_require__(69)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/tryItOut/TryItOut3.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3bb6734f", Component.options)
+  } else {
+    hotAPI.reload("data-v-3bb6734f", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 68 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            cardnumber: '',
+            cardInputIsFocused: false
+        };
+    },
+    mounted: function mounted() {
+        console.log('TryItOut3 component mounted.');
+    },
+
+    computed: {
+        showCard: function showCard() {
+            if (this.cardnumber !== '' || this.cardInputIsFocused) {
+                return false;
+            }
+            return true;
+        }
+    }
+});
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "tryItOut-container" }, [
+    _c("div", { staticClass: "gradient-left tryItOut-gradient-top" }),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _c("h3", { staticClass: "tryItOut-subtitle tm-24" }, [
+      _vm._v(
+        "Registrera ditt betalningssätt. Kom ihåg att du kan säga upp din registrering när du vill – du får en påminnelse 3 dagar innan gratisperioden löpt ut."
+      )
+    ]),
+    _vm._v(" "),
+    _c(
+      "form",
+      {
+        staticClass: "card-form-container position-relative",
+        attrs: { action: "/registrerad" }
+      },
+      [
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.cardnumber,
+              expression: "cardnumber"
+            }
+          ],
+          class: { active: !_vm.showCard },
+          attrs: {
+            type: "text",
+            placeholder:
+              "Kortnummer                                           MM/ÅÅ CVV"
+          },
+          domProps: { value: _vm.cardnumber },
+          on: {
+            blur: function($event) {
+              _vm.cardInputIsFocused = false
+            },
+            focus: function($event) {
+              _vm.cardInputIsFocused = true
+            },
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.cardnumber = $event.target.value
+            }
+          }
+        }),
+        _vm._v(" "),
+        _vm.showCard
+          ? _c("img", {
+              staticClass: "card-input-img",
+              attrs: { src: "/images/card.svg", alt: "card" }
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _c("input", {
+          staticClass: "submit submit-registeration",
+          attrs: { type: "submit", value: "Starta din gratis månad" }
+        }),
+        _vm._v(" "),
+        _vm._m(4)
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "tryItOut-title-container" }, [
+      _c("div", { staticClass: "title-wrapper" }, [
+        _c("img", {
+          staticClass: "tryItOut-title-img",
+          attrs: { src: "/images/newspaper.svg", alt: "paper" }
+        }),
+        _vm._v(" "),
+        _c("h2", [_vm._v("Magasin")])
+      ]),
+      _vm._v(" "),
+      _c("a", { staticClass: "no-decor", attrs: { href: "/testa/steg2" } }, [
+        _c("h3", [_vm._v("Tillbaka")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [
+      _vm._v(
+        "Vi accepterar Visa och Mastercard och samarbetar med betalväxeln Stripe. Läs mer på "
+      ),
+      _c("a", { attrs: { href: "" } }, [_vm._v("Stripes hemsida.")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-image-container" }, [
+      _c("img", {
+        staticClass: "card-img",
+        attrs: { src: "/images/visa.svg", alt: "Visa" }
+      }),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "card-img",
+        attrs: { src: "/images/mastercard.svg", alt: "Mastercard" }
+      }),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "card-img",
+        attrs: { src: "/images/stripe.svg", alt: "Stripe" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h4", { staticClass: "time-span" }, [
+      _vm._v("Din gratisperiod pågår mellan: \n            "),
+      _c("br"),
+      _vm._v(" 11/10/2018 – 11/11/2018. "),
+      _c("br"),
+      _vm._v("\n             Därefter kostar prenumerationen 39kr/mån.")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "no-magazine-container" }, [
+      _c("div", { staticClass: "no-magazine-content" }, [
+        _c("h3", [_vm._v("VILL DU INTE HA ETT MAGASIN?")]),
+        _vm._v(" "),
+        _c("p", [_vm._v("Byt till endast webbarkivet (19kr/mån).")])
+      ]),
+      _vm._v(" "),
+      _c("img", { attrs: { src: "/images/tablet.svg", alt: "tablet" } })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3bb6734f", module.exports)
+  }
+}
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(1)
+/* script */
+var __vue_script__ = __webpack_require__(71)
+/* template */
+var __vue_template__ = __webpack_require__(72)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/tryItOut/TryItOut4.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3bc48ad0", Component.options)
+  } else {
+    hotAPI.reload("data-v-3bc48ad0", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    mounted: function mounted() {
+        console.log('Registrerad component mounted.');
+    }
+});
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "tryItOut-container" }, [
+      _c("div", { staticClass: "gradient-left tryItOut-gradient-top" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "tryItOut-title-container" }, [
+        _c("div", { staticClass: "title-wrapper" }, [
+          _c("h2", [_vm._v("Börja upptäck!")])
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "no-decor", attrs: { href: "/testa/steg3" } }, [
+          _c("h3", [_vm._v("Tillbaka")])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("h3", { staticClass: "tryItOut-subtitle tm-24" }, [
+        _vm._v(
+          "Ditt magasin kommer till din brevlåda inom kort. Varsågod att börja upptäcka vårt välfyllda arkiv på webben så länge!"
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "discover-container" }, [
+        _c("div", { staticClass: "discover" }, [
+          _c("h2", [_vm._v("UPPTÄCK WEBBARKIVET")])
+        ]),
+        _vm._v(" "),
+        _c("h3", [_vm._v("UPPTÄCK VÅRA POPULÄRASTE ARTIKLAR:")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "discover-article" }, [
+          _c("img", {
+            attrs: { src: "/images/idioti.png", alt: "Upptäck bild01" }
+          }),
+          _vm._v(" "),
+          _c("h2", [_vm._v("Omgiven av idioter")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Därför stavas framtidens viktigaste konsumentmärkning Fair Tax."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "author" }, [
+            _c("span", { staticClass: "text" }, [_vm._v("TEXT:")]),
+            _vm._v(" JOHAN FRISK")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "discover-article" }, [
+          _c("img", {
+            attrs: { src: "/images/palme.png", alt: "Upptäck bild02" }
+          }),
+          _vm._v(" "),
+          _c("h2", [_vm._v("Palmemordet: Den osannolika mördaren")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "Läs alla förhören, se Stig Engström på TV och få svar på dina frågor."
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "author" }, [
+            _c("span", { staticClass: "text" }, [_vm._v("TEXT:")]),
+            _vm._v(" THOMAS PETTERSSON")
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3bc48ad0", module.exports)
+  }
+}
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports) {
+
+//Mobile Swiper with 3D effect
+var swiperMobile = new Swiper('.swiper-container.mobile', {
+  effect: 'coverflow',
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+});
+
+//Desktop Swiper without 3D effect
+var swiperDesktop = new Swiper('.swiper-container.desktop', {
+  grabCursor: true,
+  loop: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+});
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

@@ -2,7 +2,7 @@
 
     <div class="tryItOut-container">
 
-        <div class="gradient-left"></div>
+        <div class="gradient-left tryItOut-gradient-top"></div>
 
         <h2 class="tryItOut-title">Testa en månad gratis!</h2>
         <h3 class="tryItOut-subtitle">Välj den prenumeration du vill testa.</h3>
@@ -79,12 +79,12 @@
             </div>
 
             <div class="row">
-                <div class="spread-select-button border-right">
+                <a href="/testa/steg2" class="spread-select-button border-right no-decor">
                     <h4>Välj</h4>
-                </div>
-                <div class="spread-select-button border-left">
+                </a>
+                <a href="/testa/steg2" class="spread-select-button border-left no-decor">
                     <h4>Välj</h4>
-                </div>
+                </a>
             </div>
   
         </div>
@@ -129,8 +129,6 @@
             </div>
 
         </div>
-
-        
 
     </div>
     

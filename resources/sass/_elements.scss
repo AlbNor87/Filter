@@ -7,3 +7,23 @@ h6,
 p {
     margin: 0;
 }
+
+a:link {
+    color: $FilterWhite;
+    // text-decoration: none;
+}
+
+
+a:visited {
+    color: $FilterGreyLight;
+}
+
+
+a:hover {
+    color: $FilterGreyLight;
+}
+
+
+a:active {
+    color: $FilterWhite;
+}

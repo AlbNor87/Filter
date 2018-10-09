@@ -3,7 +3,7 @@
 @section('content')
 
     <div id="app" class="page-container">
-        <tryitout></tryitout>
+        <tryitout4></tryitout4>
     </div>
     
 @stop

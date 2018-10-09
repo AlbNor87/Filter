@@ -1,0 +1,151 @@
+.form-container {
+    width: 100%;
+    padding: 18px;
+    input[type=text], input[type=number],input[type=password] {
+        margin-bottom: 16px;
+        width: 100%;
+        height: 48px;
+        padding: 4px 15px;
+        box-sizing: border-box;
+        border: none;
+        color: $FilterGreyLight;
+        background-color: $FilterGreyDark;
+        font-family: 'PF Din';
+        font-weight: 400;
+        font-size: 18px;
+        @include bp(medium) {
+            height: 56px;
+        } 
+        &:focus {
+            background-color: $FilterGreyLight;
+            color: $FilterGreyDark;
+            outline: none;
+        }
+        
+    }
+
+}
+
+.checkbox-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        padding-left: 42px;
+        padding-top: 4px;
+        flex: 1;
+        font-family: 'PF Din';
+        color: $FilterGreyLight;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        @include bp(medium) {
+            font-size: 24px;   
+            max-width: 462px;
+            line-height: 33px;
+        } 
+    }
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    background-color: #C8C8C8;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: $FilterGreyLight;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: $FilterGreen;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 8px;
+    top: 3px;
+    width: 8px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.tryItOut-title-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 27px;
+    padding-left: 18px;
+    padding-right: 18px;
+    h2 {
+        color: $FilterWhite;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 35px;
+    }
+    h3{ 
+        font-family: 'PF Din';
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        color: $FilterPink; 
+        align-self: flex-start;
+    }
+    @include bp(medium) {
+        padding-left: 66px;
+        padding-right: 66px;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 1px;
+    }
+}
+
+.tryItOut-title-img {
+    margin-right: 10px;
+    width: 44px;
+    height: 29px;
+}
+
+.tm-24 {
+    margin-top: 24px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.submit-registeration {
+    margin-top: 24px;
+    width: 100%;
+    height: 48px;
+    padding-top: 7px;
+}

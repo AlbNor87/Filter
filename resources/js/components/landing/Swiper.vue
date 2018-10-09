@@ -11,18 +11,24 @@
             <div class="swiper-wrapper">
                   <!-- Slides -->
                 <div class="swiper-slide slide">
-                    <p>“Jag pratar ofta med folk i min omgivning om sådant jag läst i Filter”</p>
-                    <p class="quoted">Olle D - Läsare</p>
+                    <div class="mobile-slide">
+                        <p>“Jag pratar ofta med folk i min omgivning om sådant jag läst i Filter”</p>
+                        <p class="quoted">Olle D - Läsare</p>
+                    </div>
                 </div>
 
                 <div class="swiper-slide slide">
-                    <p>“Jag använder ofta Filter när jag brygger kaffe!”</p>
-                    <p class="quoted">Hannibal Lecter - Psykopat</p>
+                    <div class="mobile-slide">
+                        <p>“Jag använder ofta Filter när jag brygger kaffe!”</p>
+                        <p class="quoted">Hannibal Lecter - Psykopat</p>
+                    </div>
                 </div>
 
                 <div class="swiper-slide slide">
-                    <p>“Jag använder nästan alltid Filter på instagram!”</p>
-                    <p class="quoted">Sauron - Mörkrets Härskare</p>
+                    <div class="mobile-slide">
+                        <p>“Jag använder nästan alltid Filter på instagram!”</p>
+                        <p class="quoted">Sauron - Mörkrets Härskare</p>
+                    </div>
                 </div>
 
             </div>

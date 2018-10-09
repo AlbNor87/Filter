@@ -60,6 +60,22 @@ p {
   margin: 0;
 }
 
+a:link {
+  color: #FAFAFA;
+}
+
+a:visited {
+  color: #CECECE;
+}
+
+a:hover {
+  color: #CECECE;
+}
+
+a:active {
+  color: #FAFAFA;
+}
+
 .gradient-left,
 .gradient-right {
   position: absolute;
@@ -110,6 +126,14 @@ p {
   .mobile {
     display: none;
   }
+}
+
+.no-decor {
+  text-decoration: none;
+}
+
+.pf-din {
+  font-family: 'PF Din';
 }
 
 .navbar {
@@ -216,6 +240,10 @@ p {
     width: 21px;
     height: 16px;
   }
+}
+
+.log-in .color-white {
+  color: #CECECE;
 }
 
 .intro-container {
@@ -634,8 +662,9 @@ p {
 }
 
 .swiper-container {
+  background-color: transparent;
+  height: 232px;
   width: 338px;
-  height: 193px;
   margin-top: 4px;
 }
 
@@ -658,17 +687,13 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 16px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: #E1AB99;
+  background-color: transparent;
   font-weight: 700;
   font-size: 22px;
 }
 
 @media (min-width: 768px) {
   .slide {
-    background-color: transparent;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -720,10 +745,36 @@ p {
   background: #FAFAFA;
 }
 
+.swiper-pagination-bullet {
+  background: #FAFAFA;
+}
+
 @media (min-width: 768px) {
   .swiper-pagination-bullet {
     background: #FAFAFA;
   }
+}
+
+.mobile-slide {
+  padding: 16px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 100%;
+  height: 193px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #E1AB99;
+  background-image: url("/images/quote.svg");
+  background-size: 120px 105px;
+  background-position: 97.2% 10%;
 }
 
 .subscription-container {
@@ -1161,13 +1212,13 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding-top: 53px;
+  padding-top: 57px;
   background-color: #1A1A1A;
 }
 
 .tryItOut-title {
   position: absolute;
-  top: 30px;
+  top: 34px;
   padding-left: 18px;
   color: #FAFAFA;
   font-size: 32px;
@@ -1184,13 +1235,23 @@ p {
   }
 }
 
-.tryItOut-subtitle {
+.tryItOut-subtitle,
+.time-span {
   margin-top: 18px;
   padding-left: 18px;
+  padding-right: 18px;
   font-family: 'Harriet Text';
   color: #CECECE;
   font-size: 16px;
   font-weight: 500;
+  line-height: 22px;
+}
+
+@media (min-width: 768px) {
+  .tryItOut-subtitle,
+  .time-span {
+    margin-left: 48px;
+  }
 }
 
 .spread-sheet {
@@ -1312,7 +1373,7 @@ p {
 }
 
 .mailbox {
-  top: 201px;
+  top: 202px;
 }
 
 .web-access {
@@ -1375,6 +1436,12 @@ p {
   background-color: #1A1A1A;
 }
 
+@media (min-width: 768px) {
+  .always-container {
+    padding-left: 48px;
+  }
+}
+
 .always-title {
   position: absolute;
   top: 41px;
@@ -1426,6 +1493,10 @@ p {
     max-width: 462px;
     line-height: 33px;
   }
+}
+
+.tryItOut-gradient-top {
+  top: 4px;
 }
 
 .footer {
@@ -1495,6 +1566,9 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     max-width: 1280px;
     padding-top: 30px;
@@ -1549,6 +1623,27 @@ p {
   }
 }
 
+.sign-up input[type=text] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 40px;
+  padding: 4px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  color: #292929;
+  font-family: 'PF Din';
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .sign-up input[type=text] {
+    height: 56px;
+  }
+}
+
 @media (min-width: 768px) {
   .sign-up-text-wrapper {
     width: 100%;
@@ -1590,27 +1685,6 @@ p {
   .submit {
     height: 56px;
     font-size: 32px;
-  }
-}
-
-input[type=text] {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 40px;
-  padding: 4px 15px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: none;
-  color: #292929;
-  font-family: 'PF Din';
-  font-weight: 500;
-  font-size: 18px;
-}
-
-@media (min-width: 768px) {
-  input[type=text] {
-    height: 56px;
   }
 }
 
@@ -1667,5 +1741,403 @@ input[type=text] {
             justify-content: flex-end;
     padding-right: 0px;
   }
+}
+
+.form-container {
+  width: 100%;
+  padding: 18px;
+}
+
+.form-container input[type=text],
+.form-container input[type=number],
+.form-container input[type=password] {
+  margin-bottom: 16px;
+  width: 100%;
+  height: 48px;
+  padding: 4px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  color: #CECECE;
+  background-color: #292929;
+  font-family: 'PF Din';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .form-container input[type=text],
+  .form-container input[type=number],
+  .form-container input[type=password] {
+    height: 56px;
+  }
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=number]:focus,
+.form-container input[type=password]:focus {
+  background-color: #CECECE;
+  color: #292929;
+  outline: none;
+}
+
+.checkbox-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkbox-container p {
+  padding-left: 42px;
+  padding-top: 4px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-family: 'PF Din';
+  color: #CECECE;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+@media (min-width: 768px) {
+  .checkbox-container p {
+    font-size: 24px;
+    max-width: 462px;
+    line-height: 33px;
+  }
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  height: 24px;
+  width: 24px;
+  background-color: #C8C8C8;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  background-color: #CECECE;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #357B2F;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 8px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.tryItOut-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 27px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.tryItOut-title-container h2 {
+  color: #FAFAFA;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.tryItOut-title-container h3 {
+  font-family: 'PF Din';
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  color: #E1AB99;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media (min-width: 768px) {
+  .tryItOut-title-container {
+    padding-left: 66px;
+    padding-right: 66px;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 1px;
+  }
+}
+
+.tryItOut-title-img {
+  margin-right: 10px;
+  width: 44px;
+  height: 29px;
+}
+
+.tm-24 {
+  margin-top: 24px;
+}
+
+.title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.submit-registeration,
+.discover {
+  margin-top: 24px;
+  width: 100%;
+  height: 48px;
+  padding-top: 7px;
+}
+
+.card-form-container {
+  width: 100%;
+  padding: 18px;
+}
+
+.card-form-container input[type=text] {
+  margin-bottom: 8px;
+  width: 100%;
+  height: 48px;
+  padding: 4px 15px 4px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  color: #CECECE;
+  background-color: #292929;
+  font-family: 'PF Din';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .card-form-container input[type=text] {
+    height: 56px;
+  }
+}
+
+.card-form-container input[type=text]:focus {
+  background-color: #CECECE;
+  color: #292929;
+  outline: none;
+}
+
+.card-form-container input[type=text].active {
+  padding: 4px 15px;
+}
+
+.card-form-container p {
+  font-size: 12px;
+  font-family: 'Harriet Text';
+  font-weight: 500;
+  line-height: 18px;
+  color: #CECECE;
+  margin-bottom: 16px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.card-input {
+  padding-left: 30px;
+}
+
+.card-input.active {
+  padding-left: 30px;
+}
+
+.card-input-img {
+  position: absolute;
+  top: 36px;
+  left: 32px;
+  width: 16px;
+  height: 12px;
+}
+
+.card-image-container {
+  width: 100%;
+}
+
+.card-img {
+  width: 49px;
+  height: 32px;
+  margin-right: 6px;
+}
+
+.time-span {
+  padding: 0;
+  margin-top: 32px;
+}
+
+.no-magazine-container {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  height: 72px;
+  background-color: #292929;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.no-magazine-container img {
+  width: 35px;
+  height: 40px;
+  margin-left: 21px;
+}
+
+.no-magazine-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.no-magazine-content h3 {
+  font-family: 'PF Din';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #E1AB99;
+}
+
+.no-magazine-content p {
+  font-size: 12px;
+  font-family: 'Harriet Text';
+  font-weight: 500;
+  line-height: 18px;
+  color: #CECECE;
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
+.discover-container {
+  padding: 18px;
+}
+
+.discover-container h3 {
+  margin-top: 40px;
+  font-family: 'PF Din';
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.discover {
+  background-color: #D1201E;
+  height: 48px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discover h2 {
+  font-family: 'PF Din';
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.discover-article {
+  padding-top: 6px;
+  padding-bottom: 24px;
+}
+
+.discover-article img {
+  width: 100%;
+  height: 180px;
+}
+
+.discover-article h2 {
+  padding-top: 18px;
+  font-size: 22px;
+  font-weight: 500;
+  padding-bottom: 4px;
+  line-height: 25px;
+}
+
+.discover-article p {
+  color: #CECECE;
+  font-family: 'Harriet Text';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.discover-article .author {
+  margin-top: 8px;
+  font-family: 'Harriet';
+  color: #E1AB99;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.discover-article .author .text {
+  text-transform: uppercase;
+  font-family: 'PF Din';
+  color: #E1AB99;
+  font-weight: 500;
 }
 

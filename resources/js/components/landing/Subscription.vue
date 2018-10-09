@@ -47,9 +47,9 @@
                 </div>
 
                 <div class="select">
-                    <div class="select-button">
+                    <a href="/testa/steg1" class="select-button no-decor">
                         <h4>Välj</h4>
-                    </div>
+                    </a>
                     <div class="price">
                         <h3><span class="digit">19</span> kr / mån</h3>
                     </div>
@@ -102,9 +102,9 @@
                     </div>
 
                     <div class="select">
-                        <div class="select-button">
+                        <a href="/testa/steg1" class="select-button no-decor">
                             <h4>Välj</h4>
-                        </div>
+                        </a>
                         <div class="price">
                             <h3><span class="digit">39</span> kr / mån</h3>
                         </div>

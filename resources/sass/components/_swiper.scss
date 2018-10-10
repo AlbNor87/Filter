@@ -76,3 +76,10 @@
     background-size: 120px 105px;
     background-position: 97.2% 10%;
 }
+
+.swiper-button-next {
+    background-image: url('/images/arrow-right.svg');
+}
+.swiper-button-prev {
+    background-image: url('/images/arrow-left.svg');
+}

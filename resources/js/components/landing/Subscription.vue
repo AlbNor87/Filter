@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="select">
-                    <a href="/testa/steg1" class="select-button no-decor">
+                    <a href="/testa/steg2" class="select-button no-decor button-fx">
                         <h4>Välj</h4>
                     </a>
                     <div class="price">
@@ -102,7 +102,7 @@
                     </div>
 
                     <div class="select">
-                        <a href="/testa/steg1" class="select-button no-decor">
+                        <a href="/testa/steg2" class="select-button no-decor button-fx">
                             <h4>Välj</h4>
                         </a>
                         <div class="price">

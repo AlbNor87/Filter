@@ -4,7 +4,7 @@
         <div class="library">
             <div class="library-gradient"></div>
 
-            <a href="/testa/steg1" class="testa-mobile no-decor">
+            <a href="/testa/steg1" class="testa-mobile no-decor button-fx-mobile">
                 <h3>Testa en månad gratis</h3>
             </a>
             

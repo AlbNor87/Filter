@@ -1,18 +1,10 @@
 <nav class="footer">
     
         {{-- @include('view.name', ['some' => 'data']) --}}
-    
-    <?php
-    $name = Route::currentRouteName();
-    $current = Request::path();
-    $test = 'test';
-    ?>
-
-    
 
     <div class="footer-wrapper">
 
-        @if(Request::path() === '/')
+        @if(Request::path() === '/' || Request::path() === 'artikel' )
             <div class="sign-up-container">
                 <div class="sign-up-text-wrapper">
                     <h1>Nyfiken?</h1>
@@ -20,7 +12,7 @@
                 </div>
                 <form class="sign-up" action="">
                         <input class="sign-up-input" type="text" placeholder="exempel@email.com" required>
-                        <input class="submit" type="submit" value="Skicka">
+                        <input class="submit button-fx" type="submit" value="Skicka">
                 </form>
             </div>
         @endif        

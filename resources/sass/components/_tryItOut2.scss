@@ -1,6 +1,10 @@
 .form-container {
     width: 100%;
     padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
     input[type=text], input[type=number],input[type=password] {
         margin-bottom: 16px;
         width: 100%;
@@ -15,6 +19,7 @@
         font-size: 18px;
         @include bp(medium) {
             height: 56px;
+            max-width: 584px; 
         } 
         &:focus {
             background-color: $FilterGreyLight;

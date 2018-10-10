@@ -9,6 +9,28 @@
             </a> 
         @endif
 
+        @if(Request::path() === 'artikel')
+            <div class="listen">
+                <img src="/images/speaker.svg" alt="lyssna">
+                <p>Lyssna</p>
+            </div>
+            <a href="https://magasinetfilter.se/" class="log-in no-decor">
+                <p>Logga in</p>
+                <img src="/images/sign-in.svg" alt="sign-in">
+            </a> 
+        @endif
+
+        @if(Request::path() === 'artikel/delad')
+            <div class="listen">
+                <img src="/images/speaker.svg" alt="lyssna">
+                <p>Lyssna</p>
+            </div>
+            <a href="https://magasinetfilter.se/" class="log-in no-decor">
+                <p>Logga in</p>
+                <img src="/images/sign-in.svg" alt="sign-in">
+            </a> 
+        @endif
+
         @if(Request::path() === 'testa')
             <div class="log-in">
                 <p class="color-white">Steg 1 av 3</p>

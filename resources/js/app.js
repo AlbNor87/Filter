@@ -18,6 +18,11 @@ Vue.component('tryitout', require('./components/tryItOut/TryItOut.vue'));
 Vue.component('tryitout2', require('./components/tryItOut/TryItOut2.vue'));
 Vue.component('tryitout3', require('./components/tryItOut/TryItOut3.vue'));
 Vue.component('tryitout4', require('./components/tryItOut/TryItOut4.vue'));
+Vue.component('samplearticle', require('./components/samplearticle/SampleArticle.vue'));
+Vue.component('samplearticleshared', require('./components/samplearticle/SampleArticleShared.vue'));
+Vue.component('subscribe', require('./components/samplearticle/Subscribe.vue'));
+Vue.component('paywall', require('./components/samplearticle/PayWall.vue'));
+
 
 const app = new Vue({
     el: '#app'

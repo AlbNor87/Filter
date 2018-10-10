@@ -8,7 +8,7 @@
             <div class="title-wrapper">
                 <h2>Börja upptäck!</h2>
             </div>
-            <a href="/testa/steg3" class="no-decor"><h3>Tillbaka</h3></a>
+            <a href="/testa/steg3" class="no-decor button-fx"><h3>Tillbaka</h3></a>
         </div>
         <h3 class="tryItOut-subtitle tm-24">Ditt magasin kommer till din brevlåda inom kort. Varsågod att börja upptäcka vårt välfyllda arkiv på webben så länge!</h3>
 

@@ -31,8 +31,7 @@
         </div>
 
         </div>
-
-
+        
     </div>
     
 </template>

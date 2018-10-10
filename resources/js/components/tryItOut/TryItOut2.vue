@@ -10,7 +10,7 @@
                 <h2>Magasin</h2>
             </div>
 
-            <a href="/testa/steg1" class="no-decor"><h3>Tillbaka</h3></a>
+            <a href="/testa/steg1" class="no-decor button-fx"><h3>Tillbaka</h3></a>
         </div>
         <h3 class="tryItOut-subtitle tm-24">Prenumerationen inkluderar tillgång till både webbarkivet och magasinet. Registrera ditt inlogg och ange den adress som du vill ha tidningen levererad till.</h3>
 
@@ -32,7 +32,7 @@
                 <span class="checkmark"></span>
             </label>
 
-            <input class="submit submit-registeration" type="submit" value="Nästa steg">
+            <input class="submit submit-registeration button-fx" type="submit" value="Nästa steg">
 
         </form>
 

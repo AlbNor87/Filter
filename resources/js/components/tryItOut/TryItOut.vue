@@ -79,10 +79,10 @@
             </div>
 
             <div class="row">
-                <a href="/testa/steg2" class="spread-select-button border-right no-decor">
+                <a href="/testa/steg2" class="spread-select-button border-right no-decor button-fx">
                     <h4>Välj</h4>
                 </a>
-                <a href="/testa/steg2" class="spread-select-button border-left no-decor">
+                <a href="/testa/steg2" class="spread-select-button border-left no-decor button-fx">
                     <h4>Välj</h4>
                 </a>
             </div>

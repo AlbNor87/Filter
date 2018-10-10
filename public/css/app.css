@@ -474,6 +474,8 @@ a:active {
 }
 
 .testa-desktop {
+  -webkit-transition: all .7s;
+  transition: all .7s;
   margin-top: 24px;
   width: 383px;
   height: 48px;
@@ -502,6 +504,10 @@ a:active {
   .testa-desktop {
     display: none;
   }
+}
+
+.top-button {
+  margin-top: 0px;
 }
 
 .library-container {
@@ -859,10 +865,12 @@ a:active {
 
 .swiper-button-next {
   background-image: url("/images/arrow-right.svg");
+  outline: none;
 }
 
 .swiper-button-prev {
   background-image: url("/images/arrow-left.svg");
+  outline: none;
 }
 
 .subscription-container {
@@ -1645,6 +1653,26 @@ a:active {
   }
 }
 
+.link-container {
+  margin-top: 37px;
+  width: 100%;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.link-container a {
+  font-family: 'Pf Din';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 27px;
+  margin-right: 35px;
+  color: #E1AB99;
+  text-decoration: none;
+}
+
 @media (min-width: 768px) {
   .footer-wrapper {
     display: -webkit-box;
@@ -1654,9 +1682,9 @@ a:active {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
     max-width: 1280px;
     padding-top: 30px;
@@ -1685,10 +1713,10 @@ a:active {
 
 @media (min-width: 768px) {
   .sign-up-container {
-    width: 50%;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    width: 70%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding-left: 78px;
   }
 }
@@ -1823,11 +1851,16 @@ a:active {
 @media (min-width: 768px) {
   .logo-container {
     background-color: #292929;
-    width: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding-right: 0px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-right: 148px;
   }
 }
 
@@ -2037,7 +2070,8 @@ a:active {
 }
 
 .card-form-container input[type=text],
-.card-form-container input[type=number] {
+.card-form-container input[type=number],
+.card-form-container input[type=tel] {
   margin-bottom: 8px;
   width: 100%;
   height: 48px;
@@ -2054,37 +2088,43 @@ a:active {
 
 @media (min-width: 768px) {
   .card-form-container input[type=text],
-  .card-form-container input[type=number] {
+  .card-form-container input[type=number],
+  .card-form-container input[type=tel] {
     height: 56px;
   }
 }
 
 .card-form-container input[type=text]:focus,
-.card-form-container input[type=number]:focus {
+.card-form-container input[type=number]:focus,
+.card-form-container input[type=tel]:focus {
   background-color: #CECECE;
   color: #292929;
   outline: none;
 }
 
 .card-form-container input[type=text].active,
-.card-form-container input[type=number].active {
+.card-form-container input[type=number].active,
+.card-form-container input[type=tel].active {
   padding: 4px 15px;
 }
 
 .card-form-container input[type=text].card-number,
-.card-form-container input[type=number].card-number {
+.card-form-container input[type=number].card-number,
+.card-form-container input[type=tel].card-number {
   width: 74%;
 }
 
 .card-form-container input[type=text].month,
-.card-form-container input[type=number].month {
+.card-form-container input[type=number].month,
+.card-form-container input[type=tel].month {
   padding: 4px 4px;
   width: 15%;
   margin-left: -5px;
 }
 
 .card-form-container input[type=text].cvv,
-.card-form-container input[type=number].cvv {
+.card-form-container input[type=number].cvv,
+.card-form-container input[type=tel].cvv {
   padding: 4px 4px;
   width: 12%;
   margin-left: -5px;
@@ -2651,5 +2691,137 @@ a:active {
 
 .form-container.payWall {
   padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+.hamburger-container {
+  width: 100%;
+}
+
+.hamburger-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hamburger-button .bar {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin: 2px;
+  width: 24px;
+  height: 3px;
+  background-color: #E1AB99;
+}
+
+.hamburger-button.active {
+  position: fixed;
+}
+
+.hamburger-button.active .bar.top {
+  background-color: #1A1A1A;
+  -webkit-transform: rotate(-135deg) translate(-5px, -5px);
+          transform: rotate(-135deg) translate(-5px, -5px);
+}
+
+.hamburger-button.active .bar.mid {
+  opacity: 0;
+  -webkit-transform: translate(25px, 0px);
+          transform: translate(25px, 0px);
+  background-color: #1A1A1A;
+}
+
+.hamburger-button.active .bar.bot {
+  background-color: #1A1A1A;
+  -webkit-transform: rotate(135deg) translate(-5px, 5px);
+          transform: rotate(135deg) translate(-5px, 5px);
+}
+
+.hamburger-menu {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 100vh;
+  background-color: #E1AB99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 38px;
+}
+
+.hamburger-menu.active {
+  width: 272px;
+  padding-left: 32px;
+}
+
+.hamburger-menu a {
+  font-family: 'Pf Din';
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 32px;
+  color: #1A1A1A;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamburger-menu a img {
+  margin-left: 4px;
+  margin-bottom: 4px;
+  width: 16px;
+  height: 12px;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.ghost {
+  opacity: 0;
+  pointer-events: none;
 }
 

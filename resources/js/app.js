@@ -22,6 +22,7 @@ Vue.component('samplearticle', require('./components/samplearticle/SampleArticle
 Vue.component('samplearticleshared', require('./components/samplearticle/SampleArticleShared.vue'));
 Vue.component('subscribe', require('./components/samplearticle/Subscribe.vue'));
 Vue.component('paywall', require('./components/samplearticle/PayWall.vue'));
+Vue.component('hamburger', require('./components/hamburger/Hamburger.vue'));
 
 
 const app = new Vue({
@@ -34,5 +35,29 @@ if(document.querySelector('.swiper-container')) {
     });
     require('./swiper-init');
 }
+
+if(document.querySelector('#tryItOutNow')) {
+
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+        if (document.body.scrollTop > 520 || document.documentElement.scrollTop > 520) {
+            console.log('Its working!');
+            let target= document.querySelector("#tryItOutNowNavbar");
+            target.classList.remove('ghost');
+        } else {
+            document.querySelector("#tryItOutNowNavbar").classList.add('ghost');
+        }
+    }
+
+}
+
+
+if(document.querySelector('#hamburger')) {
+    const hamburger = new Vue({
+        el: '#hamburger'
+    });
+}
+
 
 

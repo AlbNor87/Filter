@@ -26,7 +26,6 @@
 }
 
 .title {
-    // width: 326px;
     justify-content: center;
     font-weight: 300;
     font-size: 32px;
@@ -105,6 +104,7 @@
 }
 
 .testa-desktop {
+    transition: all .7s;
     margin-top: 24px;
     width: 383px;
     height: 48px;
@@ -116,7 +116,6 @@
         font-family: 'PF Din';
         text-transform: uppercase;
         text-align: center;
-        // letter-spacing: 20;
         font-size: 24px;
         font-weight: 500;
         color: $FilterBlack;
@@ -124,4 +123,8 @@
     @include bp(small) {
         display: none;
     }
+}
+
+.top-button {
+    margin-top: 0px;
 }

@@ -16,29 +16,29 @@
 
         <form class="card-form-container position-relative" action="/registrerad">
 
-            <input
+            <input onKeyDown="if(this.value.length==16 && event.keyCode>47 && event.keyCode < 58)return false;"
             class="card-number"
             type="number" 
             placeholder="Kortnummer"
             v-model="cardnumber"
             @blur="cardInputIsFocused = false"
             @focus="cardInputIsFocused = true"
-            maxlength="16"
             v-bind:class="{ active: !showCard }"
             required
             >
 
             <input
+            onKeyDown="if(this.value.length==5 && event.keyCode>47 && event.keyCode < 58)return false;"
             class="month"
-            type="text" 
+            type="number" 
             placeholder="MM/ÅÅ"
-            maxlength="5"
             required
             >
 
             <input
+            onKeyDown="if(this.value.length==3 && event.keyCode>47 && event.keyCode < 58)return false;"
             class="cvv"
-            type="text" 
+            type="tel" 
             placeholder="CVV"
             maxlength="3"
             required
@@ -62,10 +62,10 @@
 
             <div class="no-magazine-container">
 
-                <div class="no-magazine-content button-fx" @click="log()">
+                <a href="/testa/steg1" class="no-magazine-content button-fx no-decor">
                     <h3>VILL DU INTE HA ETT MAGASIN?</h3>
                     <p>Byt till endast webbarkivet (19kr/mån).</p>
-                </div>
+                </a>
 
                 <img src="/images/tablet.svg" alt="tablet">
 

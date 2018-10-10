@@ -1,0 +1,100 @@
+#hamburger {
+    @include bp(medium) {
+        display: none;
+    }
+}
+
+.hamburger-container {
+    width: 100%;
+}
+
+.hamburger-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+    width: 48px;
+    height: 48px;
+    // background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .bar {
+        transition: 0.4s;
+        margin: 2px;
+        width: 24px;
+        height: 3px;
+        background-color: $FilterPink;
+    }
+    &.active {
+        position: fixed;
+        .bar {
+            &.top {
+                background-color: $FilterBlack;
+                transform: rotate(-135deg) translate(-5px, -5px);
+            }
+            &.mid {
+                opacity: 0;
+                transform: translate(25px, 0px);
+                background-color: $FilterBlack;
+            }
+            &.bot {
+                background-color: $FilterBlack;
+                transform: rotate(135deg) translate(-5px, 5px);
+            }
+        }
+
+    }
+}
+
+.hamburger-menu {
+    transition: all .4s;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    height: 100vh;
+    background-color: $FilterPink;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 38px;
+    &.active {
+        width: 272px;
+        padding-left: 32px;
+    }
+
+    a {
+        font-family: 'Pf Din';
+        font-weight: 500;
+        text-transform: uppercase; 
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 32px;
+        color: $FilterBlack;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        img {
+            margin-left: 4px;
+            margin-bottom: 4px;
+            width: 16px;
+            height: 12px;
+        }
+    }
+}
+
+.desktop {
+    @include bp(small) {
+        display: none;
+    }
+}
+
+.mobile {
+    @include bp(medium) {
+        display: none;
+    }
+}

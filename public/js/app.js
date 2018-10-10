@@ -14019,6 +14019,7 @@ Vue.component('samplearticle', __webpack_require__(73));
 Vue.component('samplearticleshared', __webpack_require__(85));
 Vue.component('subscribe', __webpack_require__(76));
 Vue.component('paywall', __webpack_require__(88));
+Vue.component('hamburger', __webpack_require__(91));
 
 var app = new Vue({
     el: '#app'
@@ -14029,6 +14030,28 @@ if (document.querySelector('.swiper-container')) {
         el: '#swiper'
     });
     __webpack_require__(79);
+}
+
+if (document.querySelector('#tryItOutNow')) {
+    var myFunction = function myFunction() {
+        if (document.body.scrollTop > 520 || document.documentElement.scrollTop > 520) {
+            console.log('Its working!');
+            var target = document.querySelector("#tryItOutNowNavbar");
+            target.classList.remove('ghost');
+        } else {
+            document.querySelector("#tryItOutNowNavbar").classList.add('ghost');
+        }
+    };
+
+    window.onscroll = function () {
+        myFunction();
+    };
+}
+
+if (document.querySelector('#hamburger')) {
+    var hamburger = new Vue({
+        el: '#hamburger'
+    });
 }
 
 /***/ }),
@@ -47428,7 +47451,7 @@ var staticRenderFns = [
           "a",
           {
             staticClass: "testa-desktop no-decor button-fx",
-            attrs: { href: "/testa/steg1" }
+            attrs: { id: "tryItOutNow", href: "/testa/steg1" }
           },
           [_c("h3", [_vm._v("Testa en månad gratis")])]
         )
@@ -48350,7 +48373,9 @@ var staticRenderFns = [
             }
           }),
           _vm._v(" "),
-          _c("h2", [_vm._v("Maffiametoden som erövrade världen")]),
+          _c("a", { staticClass: "no-decor", attrs: { href: "/artikel" } }, [
+            _c("h2", [_vm._v("Maffiametoden som erövrade världen")])
+          ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
@@ -48372,7 +48397,9 @@ var staticRenderFns = [
             }
           }),
           _vm._v(" "),
-          _c("h2", [_vm._v("Den stora oron")]),
+          _c("a", { staticClass: "no-decor", attrs: { href: "/artikel" } }, [
+            _c("h2", [_vm._v("Den stora oron")])
+          ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
@@ -48394,7 +48421,9 @@ var staticRenderFns = [
             }
           }),
           _vm._v(" "),
-          _c("h2", [_vm._v("Fett fusk")]),
+          _c("a", { staticClass: "no-decor", attrs: { href: "/artikel" } }, [
+            _c("h2", [_vm._v("Fett fusk")])
+          ]),
           _vm._v(" "),
           _c("p", [
             _vm._v(
@@ -49545,9 +49574,10 @@ var render = function() {
           staticClass: "card-number",
           class: { active: !_vm.showCard },
           attrs: {
+            onKeyDown:
+              "if(this.value.length==16 && event.keyCode>47 && event.keyCode < 58)return false;",
             type: "number",
             placeholder: "Kortnummer",
-            maxlength: "16",
             required: ""
           },
           domProps: { value: _vm.cardnumber },
@@ -49570,9 +49600,10 @@ var render = function() {
         _c("input", {
           staticClass: "month",
           attrs: {
-            type: "text",
+            onKeyDown:
+              "if(this.value.length==5 && event.keyCode>47 && event.keyCode < 58)return false;",
+            type: "number",
             placeholder: "MM/ÅÅ",
-            maxlength: "5",
             required: ""
           }
         }),
@@ -49580,7 +49611,9 @@ var render = function() {
         _c("input", {
           staticClass: "cvv",
           attrs: {
-            type: "text",
+            onKeyDown:
+              "if(this.value.length==3 && event.keyCode>47 && event.keyCode < 58)return false;",
+            type: "tel",
             placeholder: "CVV",
             maxlength: "3",
             required: ""
@@ -49613,26 +49646,7 @@ var render = function() {
           attrs: { type: "submit", value: "Starta din gratis månad" }
         }),
         _vm._v(" "),
-        _c("div", { staticClass: "no-magazine-container" }, [
-          _c(
-            "div",
-            {
-              staticClass: "no-magazine-content button-fx",
-              on: {
-                click: function($event) {
-                  _vm.log()
-                }
-              }
-            },
-            [
-              _c("h3", [_vm._v("VILL DU INTE HA ETT MAGASIN?")]),
-              _vm._v(" "),
-              _c("p", [_vm._v("Byt till endast webbarkivet (19kr/mån).")])
-            ]
-          ),
-          _vm._v(" "),
-          _c("img", { attrs: { src: "/images/tablet.svg", alt: "tablet" } })
-        ])
+        _vm._m(3)
       ]
     )
   ])
@@ -49691,6 +49705,27 @@ var staticRenderFns = [
         staticClass: "card-img",
         attrs: { src: "/images/stripe.svg", alt: "Stripe" }
       })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "no-magazine-container" }, [
+      _c(
+        "a",
+        {
+          staticClass: "no-magazine-content button-fx no-decor",
+          attrs: { href: "/testa/steg1" }
+        },
+        [
+          _c("h3", [_vm._v("VILL DU INTE HA ETT MAGASIN?")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("Byt till endast webbarkivet (19kr/mån).")])
+        ]
+      ),
+      _vm._v(" "),
+      _c("img", { attrs: { src: "/images/tablet.svg", alt: "tablet" } })
     ])
   }
 ]
@@ -50737,6 +50772,167 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-7fd7beb4", module.exports)
+  }
+}
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(92)
+/* template */
+var __vue_template__ = __webpack_require__(93)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/hamburger/Hamburger.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-224709e8", Component.options)
+  } else {
+    hotAPI.reload("data-v-224709e8", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 92 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            isActive: false
+        };
+    },
+    mounted: function mounted() {
+        console.log('Hamburger component mounted.');
+    }
+});
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "hamburger-container" }, [
+    _c(
+      "div",
+      {
+        staticClass: "hamburger-button",
+        class: { active: _vm.isActive },
+        on: {
+          click: function($event) {
+            _vm.isActive = !_vm.isActive
+          }
+        }
+      },
+      [
+        _c("div", { staticClass: "bar top" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "bar mid", class: { active: _vm.isActive } }),
+        _vm._v(" "),
+        _c("div", { staticClass: "bar bot", class: { active: _vm.isActive } })
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "hamburger-menu", class: { active: _vm.isActive } },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "https://magasinetfilter.se/annonsera/" } }, [
+          _vm._v("ANNONSERA")
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "https://magasinetfilter.se/kontakt/" } }, [
+          _vm._v("KONTAKT OCH MEDARBETARE")
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "https://magasinetfilter.se/frilansare/" } }, [
+          _vm._v("SKRIVA FÖR FILTER")
+        ]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "https://pluspren.se/info/villkor.htm" } }, [
+          _vm._v("VILLKOR OCH POLICY")
+        ])
+      ]
+    )
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "https://magasinetfilter.se/" } }, [
+      _vm._v("Logga in "),
+      _c("img", { attrs: { src: "/images/sign-in-black.svg", alt: "sign-in" } })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-224709e8", module.exports)
   }
 }
 

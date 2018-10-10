@@ -11,21 +11,21 @@
 
         <div class="tryFilter-article">
             <img src="/images/tryFilter01.png" alt="Prova Filter bild01">
-            <h2>Maffiametoden som erövrade världen</h2>
+            <a href="/artikel" class="no-decor"><h2>Maffiametoden som erövrade världen</h2></a>
             <p>Därför stavas framtidens viktigaste konsumentmärkning Fair Tax.</p>
             <p class="author"><span class="text">TEXT:</span> JOHAN FRISK</p>
         </div>
 
         <div class="tryFilter-article">
             <img src="/images/tryFilter02.png" alt="Prova Filter bild02">
-            <h2>Den stora oron</h2>
+            <a href="/artikel" class="no-decor"><h2>Den stora oron</h2></a>
             <p>Allt fler svenskar odlar, går kurser i självhushållning och drömmer om att flytta ut på landet. Vad är de egentligen ute efter?</p>
             <p class="author"><span class="text">TEXT:</span> ERIK EJE ALMQVIST</p>
         </div>
 
         <div class="tryFilter-article">
             <img src="/images/tryFilter03.png" alt="Prova Filter bild03">
-            <h2>Fett fusk</h2>
+            <a href="/artikel" class="no-decor"><h2>Fett fusk</h2></a>
             <p>En god olivolja kan förgylla vilken sallad som helst. Men det finns knappast någon annan matvara som det fuskas så mycket med. Fyra av tio extra jungfruoljor fick underkänt när Hunger skickade dem på test.</p>
             <p class="author"><span class="text">TEXT:</span> IVAR ANDERSSON</p>
         </div>

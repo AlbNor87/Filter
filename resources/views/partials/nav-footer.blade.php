@@ -14,6 +14,14 @@
                         <input class="sign-up-input" type="text" placeholder="exempel@email.com" required>
                         <input class="submit button-fx" type="submit" value="Skicka">
                 </form>
+
+                <div class="link-container desktop">
+                    <a class="button-fx" href="https://magasinetfilter.se/annonsera/">ANNONSERA</a>
+                    <a class="button-fx" href="https://magasinetfilter.se/kontakt/">KONTAKT OCH MEDARBETARE</a>
+                    <a class="button-fx" href="https://magasinetfilter.se/frilansare/">SKRIVA FÖR FILTER</a>
+                    <a class="button-fx" href="https://pluspren.se/info/villkor.htm">VILLKOR OCH POLICY</a>
+                </div>
+
             </div>
         @endif        
         

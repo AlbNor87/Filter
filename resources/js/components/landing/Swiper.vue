@@ -19,14 +19,14 @@
 
                 <div class="swiper-slide slide">
                     <div class="mobile-slide">
-                        <p>“Jag använder ofta Filter när jag brygger kaffe!”</p>
-                        <p class="quoted">Hannibal Lecter - Psykopat</p>
+                        <p>“Men jag gillar ju Filter, det är en supertidning. Sköna killar!”</p>
+                        <p class="quoted">Sigge Eklund - Författare</p>
                     </div>
                 </div>
 
                 <div class="swiper-slide slide">
                     <div class="mobile-slide">
-                        <p>“Jag använder nästan alltid Filter på instagram!”</p>
+                        <p>“Jag använder ofta Filter när jag brygger kaffe!”</p>
                         <p class="quoted">Sauron - Mörkrets Härskare</p>
                     </div>
                 </div>
@@ -51,14 +51,14 @@
 
                 <div class="swiper-slide slide">
                     <div class="desktop-slide">
-                        <p>“Jag använder ofta Filter när jag brygger kaffe!”</p>
-                        <p class="quoted">Hannibal Lecter - Psykopat</p>
+                        <p>“Men jag gillar ju Filter, det är en supertidning. Sköna killar!”</p>
+                        <p class="quoted">Sigge Eklund - Författare</p>
                     </div>
                 </div>
 
                 <div class="swiper-slide slide">
                     <div class="desktop-slide">
-                        <p>“Jag använder nästan alltid Filter på instagram!”</p>
+                        <p>“Jag använder ofta Filter när jag brygger kaffe!”</p>
                         <p class="quoted">Sauron - Mörkrets Härskare</p>
                     </div>
                 </div>

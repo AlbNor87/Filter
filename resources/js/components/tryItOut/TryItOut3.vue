@@ -38,9 +38,8 @@
             <input
             onKeyDown="if(this.value.length==3 && event.keyCode>47 && event.keyCode < 58)return false;"
             class="cvv"
-            type="tel" 
+            type="number" 
             placeholder="CVV"
-            maxlength="3"
             required
             >
 

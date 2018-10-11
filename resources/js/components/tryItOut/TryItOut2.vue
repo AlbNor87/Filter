@@ -27,7 +27,7 @@
             <input type="text" placeholder="Land" required>
 
             <label class="checkbox-container">
-                <input type="checkbox">
+                <input type="checkbox" required>
                     <p>Jag har läst och godkänner hanteringen av mina personuppgifter. <a href="" class="pf-din">Läs här.</a></p>
                 <span class="checkmark"></span>
             </label>

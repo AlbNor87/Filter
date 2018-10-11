@@ -13999,11 +13999,6 @@ __webpack_require__(14);
 
 window.Vue = __webpack_require__(37);
 
-// import Swiper from 'swiper';
-// import 'swiper/dist/swiper.css';
-// Vue.use(Swiper);
-
-//Landing page
 Vue.component('intro', __webpack_require__(40));
 Vue.component('library', __webpack_require__(43));
 Vue.component('pitch', __webpack_require__(46));
@@ -14032,10 +14027,16 @@ if (document.querySelector('.swiper-container')) {
     __webpack_require__(88);
 }
 
-if (document.querySelector('#tryItOutNow')) {
+if (document.querySelector('#hamburger')) {
+    var hamburger = new Vue({
+        el: '#hamburger'
+    });
+}
+
+//Init ghost button in the navbar (only desktop)
+if (document.querySelector('#tryItOutNow') && document.documentElement.clientWidth > 768) {
     var myFunction = function myFunction() {
-        if (document.body.scrollTop > 520 || document.documentElement.scrollTop > 520) {
-            console.log('Its working!');
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
             var target = document.querySelector("#tryItOutNowNavbar");
             target.classList.remove('ghost');
         } else {
@@ -14046,12 +14047,6 @@ if (document.querySelector('#tryItOutNow')) {
     window.onscroll = function () {
         myFunction();
     };
-}
-
-if (document.querySelector('#hamburger')) {
-    var hamburger = new Vue({
-        el: '#hamburger'
-    });
 }
 
 /***/ }),
@@ -50189,17 +50184,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -50705,7 +50689,7 @@ var staticRenderFns = [
             }),
             _vm._v(" "),
             _c("input", {
-              staticClass: "submit submit-registeration button-fx",
+              staticClass: "submit submit-registeration button-fx no-tm",
               attrs: { type: "submit", value: "Logga in" }
             })
           ]

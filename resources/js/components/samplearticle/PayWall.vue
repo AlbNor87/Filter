@@ -23,7 +23,7 @@
             <input type="text" placeholder="Email" required>
             <input type="text" placeholder="Lösenord" required>
             
-            <input class="submit submit-registeration button-fx" type="submit" value="Logga in">
+            <input class="submit submit-registeration button-fx no-tm" type="submit" value="Logga in">
 
         </form>
         

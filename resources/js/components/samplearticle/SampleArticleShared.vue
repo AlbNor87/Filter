@@ -23,17 +23,6 @@
 
         </div>
 
-        <!-- <div class="samplearticle-footer">
-
-            <h3>DELA ARTIKELN</h3>
-            <div class="image-container">
-                <img class="margin-right" src="/images/facebook.svg" alt="facebook">
-                <img src="/images/twitter.svg" alt="twitter">
-            </div>
-
-
-        </div> -->
-
     </div>
     
 </template>
